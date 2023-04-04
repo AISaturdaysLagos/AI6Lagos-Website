@@ -1,0 +1,117 @@
+import React, { useRef } from 'react';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import { Link } from 'react-router-dom';
+import { TiArrowRight, TiArrowLeft } from 'react-icons/ti';
+
+const HomeSlider = () => {
+  const sliderRef = useRef<any>(null);
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    draggable: true,
+    showIndicators: true,
+  };
+
+  return (
+    <>
+      <div className="w-full mb-4 ">
+        <div className="relative box-border h-[450px]">
+          <Slider ref={sliderRef} {...settings} className="w-full ">
+            {/* slider one */}
+            <div
+              className="w-full bg-no-repeat bg-cover bg-center bg-[conic-gradient(var(--tw-gradient-stops)),url('https://res.cloudinary.com/owujib/image/upload/v1680478882/ai-saturdays-imgs/Group_1_nqp4ec.jpg')] from-amber-200 via-violet-600 to-sky-900"
+              style={{
+                backgroundSize: 'cover',
+                backgroundRepeat: 'no-repeat',
+              }}
+            >
+              <div className="w-full  text-right">
+                <div className="px-10 py-4 mx-auto max-w-2xl lg:max-w-6xl">
+                  <div className="max-w-2xl">
+                    <h1 className="md:text-4xl font-semibold tracking-tight text-white text-5xl">
+                      AI Saturdays Lagos
+                    </h1>
+                    <div className="my-6">
+                      <p className="mt-4 text-base text-white font-light leading-7">
+                        The pool of true experts in the field is small, and
+                        Alibaba, Amazon, Facebook, Google, Microsoft and other
+                        tech giants have hired many of them. Learn the skills
+                        that power cutting-edge technology and shape the future
+                        of innovation.
+                        <br /> - <em>Artificial Intelligence</em>
+                      </p>
+
+                      <div className="mt-6 flex gap-6 justify-end">
+                        <Link
+                          className="px-4 py-2 border-white border-2 hover:bg-white  hover:text-black hover:border-white bg-transparent text-white"
+                          to="/learning-tracks"
+                        >
+                          Learning Tracks
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="w-full md:h-[85%] lg:h-[85%] h-[455px] bg-[linear-gradient(to_right_bottom,rgba(0,0,0,0.65),rgba(0,0,0,0.7)),url('https://res.cloudinary.com/owujib/image/upload/v1680055265/ai-saturdays-imgs/IMG_20190202_112621_hju44s.jpg')] bg-no-repeat bg-cover bg-center">
+              <div className="w-full text-right">
+                <div className="px-10  py-4 mx-auto max-w-2xl lg:max-w-6xl">
+                  <div className="max-w-2xl">
+                    <h1 className="md:text-8xl font-bold tracking-tight text-white text-5xl">
+                      About <br />
+                      us
+                    </h1>
+                    <div className="my-9">
+                      <p className="mt-4 text-base text-white font-light leading-7">
+                        We are enthusiasts with a zeal to create a positive
+                        impact. Our impact has grown beyond the borders of Lagos
+                        and Nigeria We are building one of Africas' largest
+                        network of AI experts
+                      </p>
+                      <div className="mt-6 flex gap-6 justify-end">
+                        <Link
+                          className="px-4 py-2 border-white border-2 hover:bg-white  hover:text-black hover:border-white bg-transparent text-white"
+                          to="/learning-tracks"
+                        >
+                          View more
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* slider two */}
+          </Slider>
+          <div className="text-right w-full absolute top-[86%] px-12 left-2 ">
+            <button
+              className="rounded text-white border-2 border-white hover:border-orange-400 hover:text-orange-400 bg-transparent p-1 px-3 my-2 mx-2 text-2xl "
+              onClick={() => {
+                sliderRef?.current?.slickPrev();
+              }}
+            >
+              <TiArrowLeft />
+            </button>
+            <button
+              className="rounded text-white border-2 border-white hover:border-orange-400 hover:text-orange-400 bg-transparent p-1 px-3 my-2 mx-2 text-2xl "
+              onClick={() => {
+                sliderRef?.current?.slickNext();
+              }}
+            >
+              <TiArrowRight />
+            </button>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default HomeSlider;
