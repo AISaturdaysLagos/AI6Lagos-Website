@@ -20,7 +20,7 @@ const Hackathon: React.FC = () => {
 
               <Link
                 to="#"
-                className="bg-white my-4 px-4 py-2 text-xl hover:bg-transparent hover:border-white hover:border-2 hover:text-white"
+                className="bg-white my-4 px-4 py-2 text-xl hover:bg-transparent hover:border-white hover:border-4 hover:text-white rounded-md mt-4"
               >
                 Register
               </Link>
@@ -32,15 +32,13 @@ const Hackathon: React.FC = () => {
       {/* about the hackathon */}
 
       <div className="w-full my-10">
-        <div
-          className={`rounded-xl container w-[85%] mx-auto h-full p-[4px] bg-gradient-to-r to-orange-900 via-orange-400 from-orange-600`}
-        >
+        <div className={`rounded-xl container w-[85%] mx-auto h-full p-[4px]`}>
           <div className="flex flex-col justify-center h-full bg-white text-black rounded-lg">
             <div className="">
-              <div className="div p-5">
-                <h1 className="mb-5 text-3xl font-extrabold text-center text-gray-900  md:text-5xl lg:text-6xl">
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r to-stone-700 from-orange-400">
-                    About the Hackathon.
+              <div className="div">
+                <h1 className="my-6 text-2xl font-extrabold text-center text-gray-700  md:text-4xl lg:text-4xl">
+                  <span className="text-gray-900 bg-clip-text ">
+                    About the Hackathon
                   </span>
                 </h1>
 
@@ -55,12 +53,12 @@ const Hackathon: React.FC = () => {
                   explore how AI can be used in their fields
                 </p>
 
-                <div className="grid grid-cols-1  mt-4 box-border  md:grid-cols-2 lg:grid-cols-2">
-                  <div className="card mx-2 my-3 border-transparent p-3">
+                <div className="grid grid-cols-1  mt-4 box-border w-[100%] md:w-[65%] lg:w-[65%] md:grid-cols-1 lg:grid-cols-1">
+                  <div className="card mx-2 my-3 border-transparent ">
                     <div
                       className={`rounded-xl h-full p-[4px] flex items-start justify-evenly  flex-col`}
                     >
-                      <span className="px-3 py-3 my-3 bg-orange-300 rounded text-center">
+                      <span className="px-3 py-3 my-3 bg-[#f8932080] rounded text-center">
                         <AiOutlineTeam size={25} />
                       </span>
                       <h2 className="text-gray-800 my-2 font-bold text-xl ">
@@ -87,11 +85,11 @@ const Hackathon: React.FC = () => {
                     </div>
                   </div>
 
-                  <div className="card mx-2 my-3  border-transparent  p-3">
+                  <div className="card mx-2 my-3  border-transparent  ">
                     <div
                       className={`rounded-xl h-full p-[4px] flex items-start justify-center flex-col`}
                     >
-                      <span className="px-3 py-3 my-3 bg-orange-300 rounded text-center">
+                      <span className="px-3 py-3 my-3 bg-[#f8932080] rounded text-center">
                         <SiBuildkite size={25} />
                       </span>
                       <h2 className="text-gray-800 my-2 font-bold text-xl ">
@@ -105,11 +103,11 @@ const Hackathon: React.FC = () => {
                       </p>
                     </div>
                   </div>
-                  <div className="card mx-2 my-3  border-transparent  p-3">
+                  <div className="card mx-2 my-3  border-transparent">
                     <div
                       className={`rounded-xl h-full p-[4px] flex items-start justify-center flex-col`}
                     >
-                      <span className="px-3 py-3 my-3 bg-orange-300 rounded text-center">
+                      <span className="px-3 py-3 my-3 bg-[#f8932080] rounded text-center">
                         <HiDocument size={25} />
                       </span>
                       <h2 className="text-gray-800 my-2 font-bold text-xl ">
@@ -190,14 +188,14 @@ const Hackathon: React.FC = () => {
                   </div>
                 </div>
               </div>
-              <div className="text-center w-full mb-5  text-white">
+              <div className="text-left w-full mb-5 mt-10  text-white">
                 <a
                   href="https://ai6lagos.devpost.com"
-                  className="bg-[#f89320] w-[75px] rounded px-6 py-2"
+                  className="bg-[#f89320cd] w-[80px] rounded-md px-6 py-2"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  View more
+                  Register
                 </a>
               </div>
             </div>
@@ -210,18 +208,16 @@ const Hackathon: React.FC = () => {
         <div className="">
           <div className="mx-auto p-5 container">
             <h1 className="mb-5 text-2xl font-bold text-center text-gray-700 md:text-4xl lg:text-4xl">
-              Prizes.
+              Prizes
             </h1>
-            <div className="container mx-auto">
-              <div className="grid grid-cols-1 container px-7 md:px-14 lg:px-14 mt-4 sm:grid-cols-2  md:grid-cols-2 lg:grid-cols-3">
-                <div className="card mx-2 my-3 shadow-xl hover:shadow-2xl rounded-xl p-3 hover:cursor-pointer">
+
+            <div className="container md:mx-auto">
+              <div className="grid grid-cols-1 md:container px-4 md:px-14 lg:px-14 mt-4 sm:grid-cols-2  md:grid-cols-4 lg:grid-cols-4">
+                <div className="card mx-2 my-3 p-2">
                   <div
-                    className={`rounded-xl h-full p-[4px] flex items-center justify-center flex-col`}
+                    className={`rounded-xl  p-2 flex items-start justify-center flex-col`}
                   >
-                    <span className="px-3 py-3 my-3  rounded text-center">
-                      <AiFillStar size={35} className="text-orange-500" />
-                    </span>
-                    <h2 className="text-gray-800 my-2 font-bold text-xl ">
+                    <h2 className="text-gray-800 my-2 font-bold text-md ">
                       First Place
                     </h2>
                     <p className="text-justify">
@@ -230,13 +226,10 @@ const Hackathon: React.FC = () => {
                     </p>
                   </div>
                 </div>
-                <div className="card mx-2 my-3 shadow-xl hover:shadow-2xl rounded-xl p-3 hover:cursor-pointer">
+                <div className="card mx-2 my-3 p-2">
                   <div
-                    className={`rounded-xl h-full p-[4px] flex items-center justify-center flex-col`}
+                    className={`rounded-xl h-full p-[4px] flex items-start justify-center flex-col`}
                   >
-                    <span className="px-3 py-3 my-3  rounded text-center">
-                      <AiFillStar size={35} className="text-orange-500" />
-                    </span>
                     <h2 className="text-gray-800 my-2 font-bold text-xl ">
                       Second Place
                     </h2>
@@ -246,13 +239,10 @@ const Hackathon: React.FC = () => {
                     </p>
                   </div>
                 </div>
-                <div className="card mx-2 my-3 shadow-xl hover:shadow-2xl rounded-xl p-3 hover:cursor-pointer">
+                <div className="card mx-2 my-3  p-2">
                   <div
-                    className={`rounded-xl h-full p-[4px] flex items-center justify-evenly flex-col`}
+                    className={`rounded-xl h-full p-[4px] flex items-start justify-center flex-col`}
                   >
-                    <span className="px-3 py-3 my-3  rounded text-center">
-                      <AiFillStar size={35} className="text-orange-500" />
-                    </span>
                     <h2 className="text-gray-800 my-2 font-bold text-xl ">
                       Third Place
                     </h2>
@@ -262,13 +252,10 @@ const Hackathon: React.FC = () => {
                     </p>
                   </div>
                 </div>
-                <div className="card mx-2 my-3 shadow-xl hover:shadow-2xl rounded-xl p-3 hover:cursor-pointer">
+                <div className="card mx-2 my-3 p-2">
                   <div
-                    className={`rounded-xl h-full p-[4px] flex items-center justify-center flex-col`}
+                    className={`rounded-xl h-full p-[4px] flex items-start justify-center flex-col`}
                   >
-                    <span className="px-3 py-3 my-3  rounded text-center">
-                      <AiFillStar size={35} className="text-orange-500" />
-                    </span>
                     <h2 className="text-gray-800 my-2 font-bold text-xl ">
                       Fourth Place
                     </h2>
@@ -288,218 +275,304 @@ const Hackathon: React.FC = () => {
       <div className="w-full my-10 bg-[#f89320]">
         <div className="">
           <div className="mx-auto p-5 container">
-            <h1 className="mb-5 text-3xl font-extrabold text-center text-white md:text-5xl lg:text-6xl">
+            <h1 className="mb-6 text-2xl font-bold text-center text  text-gray-700 md:text-2xl lg:text-2xl">
               Timeline for Hackathon
             </h1>
             <div className="container w-[70%] mt-5 md:w-[60%] lg:w-[60%] mx-auto">
-              <ol className="relative border-l border-white dark:border-white ">
-                <li className="mb-10 ml-4">
-                  <div className="absolute w-3 h-3  rounded-full mt-1.5 -left-1.5 border border-white  bg-white"></div>
-                  <time className="mb-1 text-sm font-normal leading-none text-white">
-                    <span>
-                      7<sup>th</sup>
-                    </span>{' '}
-                    April 2023
-                  </time>
-                  <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-                    Application/Enrollment deadline
-                  </h3>
+              <ol className="border-l border-white dark:border-white">
+                <li>
+                  <div className="flex-start flex items-center pt-3">
+                    <div className="-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-white dark:bg-white"></div>
+                    <p className="text-sm text-white">
+                      <span>
+                        7<sup>th</sup>
+                      </span>{' '}
+                      April 2023{' '}
+                    </p>
+                  </div>
+                  <div className="mt-2 ml-4 mb-6">
+                    <h4 className="text-lg font-semibold  text-white">
+                      Application/Enrollment deadline
+                    </h4>
+                  </div>
                 </li>
-                <li className="mb-10 ml-4">
-                  <div className="absolute w-3 h-3  rounded-full mt-1.5 -left-1.5 border border-white  bg-white"></div>
-                  <time className="mb-1 text-sm font-normal leading-none text-white">
-                    <span>
-                      28<sup>th</sup>
-                    </span>{' '}
-                    April 2023
-                  </time>
-                  <h3 className="text-lg font-semibold text-white">
-                    Hack kick-off livestream
-                  </h3>
+                <li>
+                  <div className="flex-start flex items-center pt-2">
+                    <div className="-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-white dark:bg-white"></div>
+                    <p className="text-sm text-white">
+                      {' '}
+                      <span>
+                        28<sup>th</sup>
+                      </span>{' '}
+                      April 2023
+                    </p>
+                  </div>
+                  <div className="mt-2 ml-4 mb-6">
+                    <h4 className="text-lg font-semibold text-white">
+                      Hack kick-off livestream
+                    </h4>
+                  </div>
                 </li>
-                <li className="ml-4">
-                  <div className="absolute w-3 h-3  rounded-full mt-1.5 -left-1.5 border border-white  bg-white"></div>
-                  <time className="mb-1 text-sm font-normal leading-none text-white">
-                    <span>
-                      29-30<sup>th</sup>
-                    </span>{' '}
-                    April 2023{' '}
-                  </time>
-                  <h3 className="text-lg font-semibold text-white">
-                    Workshop sessions
-                  </h3>
+                <li>
+                  <div className="flex-start flex items-center pt-2">
+                    <div className="-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-white dark:bg-white"></div>
+                    <p className="text-sm text-white">
+                      <span>
+                        29-30<sup>th</sup>
+                      </span>{' '}
+                      April 2023{' '}
+                    </p>
+                  </div>
+                  <div className="mt-2 ml-4 pb-5">
+                    <h4 className="text-lg font-semibold  text-white">
+                      Workshop sessions{' '}
+                    </h4>
+                  </div>
                 </li>
-                <li className="ml-4">
-                  <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border  border-white  bg-white"></div>
-                  <time className="mb-1 text-sm font-normal leading-none text-white">
-                    <span>
-                      6<sup>th</sup>
-                    </span>{' '}
-                    May 2023{' '}
-                  </time>
-                  <h3 className="text-lg font-semibold text-white">
-                    Project submission deadline
-                  </h3>
+                <li>
+                  <div className="flex-start flex items-center pt-2">
+                    <div className="-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-white dark:bg-white"></div>
+                    <p className="text-sm text-white">
+                      <span>
+                        6<sup>th</sup>
+                      </span>{' '}
+                      May 2023{' '}
+                    </p>
+                  </div>
+                  <div className="mt-2 ml-4 pb-5">
+                    <h4 className="text-lg font-semibold  text-white">
+                      Project submission deadline{' '}
+                    </h4>
+                  </div>
                 </li>
-                <li className="ml-4">
-                  <div className="absolute w-3 h-3  rounded-full mt-1.5 -left-1.5 border border-white  bg-white"></div>
-                  <time className="mb-1 text-sm font-normal leading-none text-white">
-                    <span>
-                      13<sup>th</sup>
-                    </span>{' '}
-                    April 2023{' '}
-                  </time>
-                  <h3 className="text-lg font-semibold text-white">
-                    Winner livestream announcement{' '}
-                  </h3>
+                <li>
+                  <div className="flex-start flex items-center pt-2">
+                    <div className="-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-white dark:bg-white"></div>
+                    <p className="text-sm text-white">
+                      <span>
+                        6<sup>th</sup>
+                      </span>{' '}
+                      May 2023{' '}
+                    </p>
+                  </div>
+                  <div className="mt-2 ml-4 pb-5">
+                    <h4 className="text-lg font-semibold  text-white">
+                      Winner livestream announcement
+                    </h4>
+                  </div>
                 </li>
               </ol>
             </div>
           </div>
         </div>
       </div>
-      {/* <div className="w-full my-4 ">
-        <div className="">
-          <div className="mx-auto p-5 container">
-            <h1 className="mb-4 text-3xl font-extrabold text-center text-white md:text-5xl lg:text-6xl">
-              Transformers Hackathon details
-            </h1>
-            <div className="container w-[70%] mt-5 md:w-[60%] lg:w-[60%] mx-auto">
-              <ol className="relative border-l border-white dark:border-white      items-center sm:flex">
-                <li className="mb-4 ml-4">
-                  <div className="absolute w-3 h-3  rounded-full mt-1.5 -left-1.5 border border-white  bg-white"></div>
-                  <time className="mb-1 text-sm font-normal leading-none text-white">
-                    <span>
-                      7<sup>th</sup>
-                    </span>{' '}
-                    April 2023
-                  </time>
-                  <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-                    Application/Enrollment deadline
-                  </h3>
-                </li>
-                <li className="mb-4 ml-4">
-                  <div className="absolute w-3 h-3  rounded-full mt-1.5 -left-1.5 border border-white  bg-white"></div>
-                  <time className="mb-1 text-sm font-normal leading-none text-white">
-                    <span>
-                      28<sup>th</sup>
-                    </span>{' '}
-                    April 2023
-                  </time>
-                  <h3 className="text-lg font-semibold text-white">
-                    Hack kick-off livestream
-                  </h3>
-                </li>
-                <li className="ml-4 mb-4">
-                  <div className="absolute w-3 h-3  rounded-full mt-1.5 -left-1.5 border border-white  bg-white"></div>
-                  <time className="mb-1 text-sm font-normal leading-none text-white">
-                    <span>
-                      29-30<sup>th</sup>
-                    </span>{' '}
-                    April 2023{' '}
-                  </time>
-                  <h3 className="text-lg font-semibold text-white">
-                    Workshop sessions
-                  </h3>
-                </li>
-                <li className="ml-4 mb-4">
-                  <div className="absolute w-3 h-3  rounded-full mt-1.5 -left-1.5 border  border-white  bg-white"></div>
-                  <time className="mb-1 text-sm font-normal leading-none text-white">
-                    <span>
-                      6<sup>th</sup>
-                    </span>{' '}
-                    May 2023{' '}
-                  </time>
-                  <h3 className="text-lg font-semibold text-white">
-                    Project submission deadline
-                  </h3>
-                </li>
-                <li className="ml-4 mb-4">
-                  <div className="absolute w-3 h-3  rounded-full mt-1.5 -left-1.5 border border-white  bg-white"></div>
-                  <time className="mb-1 text-sm font-normal leading-none text-white">
-                    <span>
-                      13<sup>th</sup>
-                    </span>{' '}
-                    April 2023{' '}
-                  </time>
-                  <h3 className="text-lg font-semibold text-white">
-                    Winner livestream announcement{' '}
-                  </h3>
-                </li>
-              </ol>
-            </div>
-          </div>
-        </div>
-      </div> */}
 
-      <div className="w-full my-4 ">
-        <div className="">
-          <div className="mx-auto p-5 container">
-            <h1 className="mb-5 text-xl font-bold text-center  text-gray-700 md:text-2xl lg:text-xl">
-              Hackathon Sponsors and Partners
-            </h1>
-            <div className="container mx-auto w-[90%]">
-              <div className="flex items-center justify-center mx-auto flex-wrap">
-                <div className="w-1/3 sm:w-44 px-4 my-2">
-                  <img
-                    src="https://s3.amazonaws.com/challengepost/sponsors/logos/000/030/136/highres/imageedit_1_9736518548.jpg"
-                    alt="Ai Saturday Lagos"
-                    width="100%"
-                  />
-                </div>
-                <div className="w-2/3 sm:w-44 px-4  my-2">
-                  <img
-                    src="https://s3.amazonaws.com/challengepost/sponsors/logos/000/030/137/highres/Untitled.png"
-                    alt="Ai Saturday Lagos"
-                    width="100%"
-                  />
-                </div>
-                <div className="w-1/3 sm:w-44 px-4  my-2">
-                  <img
-                    src="https://s3.amazonaws.com/challengepost/sponsors/logos/000/030/142/highres/imageedit_19_8898109917.png"
-                    alt="Arewa Datascience Community"
-                    width={'100%'}
-                  />
-                </div>
-                <div className="w-1/3 sm:w-44 px-4  my-2">
-                  <img
-                    src="https://s3.amazonaws.com/challengepost/sponsors/logos/000/030/141/highres/imageedit_17_6751278248.jpg"
-                    alt="Ai Saturday Lagos"
-                    width={'100%'}
-                  />
-                </div>
-                <div className="w-1/3 sm:w-44 px-4   my-2">
-                  <img
-                    src="https://s3.amazonaws.com/challengepost/sponsors/logos/000/030/139/highres/imageedit_7_8508616043.jpg"
-                    alt="Ai Saturday Lagos"
-                    width={'100%'}
-                  />
-                </div>
-                <div className="w-1/3 sm:w-44 px-4  my-2">
-                  <img
-                    src="https://s3.amazonaws.com/challengepost/sponsors/logos/000/030/140/highres/imageedit_9_6463237720.jpg"
-                    alt="Ai Saturday Lagos"
-                    width={'100%'}
-                  />
-                </div>
-                <div className="w-1/3 sm:w-44 px-4  my-2">
-                  <img
-                    src="https://s3.amazonaws.com/challengepost/sponsors/logos/000/030/145/highres/imageedit_21_8843030975.png"
-                    alt="Arewa Datascience Community"
-                    width={'100%'}
-                  />
-                </div>
-
-                <div className="w-1/3 sm:w-44 px-4  my-2">
-                  <img
-                    src="https://s3.amazonaws.com/challengepost/sponsors/logos/000/030/144/highres/Primary_%281%29.png"
-                    alt="Ai Saturday Lagos"
-                    width={'100%'}
-                  />
+      <div className="flex flex-col container mx-auto w-[80%]">
+        <div className="sm:-mx-6 lg:-mx-8 ">
+          <h1 className="mb-6 text-2xl font-bold text-center text  text-gray-700 md:text-2xl lg:text-2xl">
+            Workshop Schedule{' '}
+          </h1>
+          <div className="inline-block min-w-full py-2 sm:px-2 lg:px-4">
+            <div className="overflow-hidden container mx-auto">
+              <div className="flex flex-col w-[75%]">
+                <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
+                  <div className="inline-block min-w-full py-2 sm:px-6 lg:px-8">
+                    <div className="overflow-hidden container">
+                      <table className="min-w-full border md:w-full text-left text-sm font-light dark:border-neutral-500">
+                        <thead className="border-b font-medium dark:border-neutral-600">
+                          <tr>
+                            <th
+                              scope="col"
+                              className="border-r px-6 py-4 dark:border-neutral-600"
+                            >
+                              Date
+                            </th>
+                            <th
+                              scope="col"
+                              className="border-r px-6 py-4 dark:border-neutral-600"
+                            >
+                              Proposed Topic
+                            </th>
+                            <th
+                              scope="col"
+                              className="border-r px-6 py-4 dark:border-neutral-600"
+                            >
+                              Duration
+                            </th>
+                            <th scope="col" className="px-6 py-4">
+                              Platform
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr className="border-b dark:border-neutral-500">
+                            <td className="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
+                              7-Apr
+                            </td>
+                            <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                              Launch- Registration
+                            </td>
+                            <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500"></td>
+                            <td className="whitespace-nowrap px-6 py-4"></td>
+                          </tr>
+                          <tr className="border-b dark:border-neutral-500">
+                            <td className="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
+                              28-Apr
+                            </td>
+                            <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                              <ul className="list-disc">
+                                <li>Welcome keynote by Luis and Teju JJ</li>
+                                <li>
+                                  {' '}
+                                  Introduction to Hackathon Challenge by Roy and
+                                </li>
+                                <li>Team Formation</li>
+                                <li> Q&A</li>
+                              </ul>
+                            </td>
+                            <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                              TBD
+                            </td>
+                            <td className="whitespace-nowrap px-6 py-4">
+                              Zoom, Youtube Livestream [online]
+                            </td>
+                          </tr>
+                          <tr className="border-b dark:border-neutral-500">
+                            <td className="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
+                              29-Apr
+                            </td>
+                            <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                              <ul className="list-disc">
+                                <li>
+                                  Tutorial: Large Language Models for Real-World
+                                  Applications- A Gentle Intro by Luis Serrano
+                                </li>
+                                <li> Topic by Sara Hooker</li>
+                                <li>
+                                  Tutorial: How to Add AI to your App
+                                  (Pre-recording)
+                                </li>
+                              </ul>
+                            </td>
+                            <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                              TBD
+                            </td>
+                            <td className="whitespace-nowrap px-6 py-4">
+                              Zoom, Youtube Livestream [online]
+                            </td>
+                          </tr>
+                          <tr className="border-b dark:border-neutral-500">
+                            <td className="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
+                              30-Apr
+                            </td>
+                            <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                              <ul className="list-disc">
+                                <li>Q&A</li>
+                                <li> Team Formation</li>
+                                <li>Tutorial: Pending</li>
+                              </ul>
+                            </td>
+                            <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                              TBD
+                            </td>
+                            <td className="whitespace-nowrap px-6 py-4">
+                              Zoom, Youtube Livestream [online]
+                            </td>
+                          </tr>
+                          <tr className="border-b dark:border-neutral-500">
+                            <td className="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
+                              30 Apr - 6 May
+                            </td>
+                            <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                              Hacking in progress - Tips and Tricks + teams
+                              check-in
+                            </td>
+                            <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                              7 days
+                            </td>
+                            <td className="whitespace-nowrap px-6 py-4">
+                              Discord [online]
+                            </td>
+                          </tr>
+                          <tr className="border-b dark:border-neutral-500">
+                            <td className="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
+                              6 May
+                            </td>
+                            <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                              Last day of hacking (optional In-person event){' '}
+                              <br />
+                              Lagos, Ibadan, Kigali. Abuja, Ibadan and Kano
+                            </td>
+                            <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                              9-6pm (TBD)
+                            </td>
+                            <td className="whitespace-nowrap px-6 py-4">
+                              Lagos, Ibadan, Abuja, Kigali, Kano <br />
+                              [online + in-person]{' '}
+                            </td>
+                          </tr>
+                          <tr className="border-b dark:border-neutral-500">
+                            <td className="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
+                              6 May
+                            </td>
+                            <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                              Submission deadline
+                              <br />
+                            </td>
+                            <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                              23:59 WAT
+                            </td>
+                            <td className="whitespace-nowrap px-6 py-4">
+                              Google Form / DevPost?
+                            </td>
+                          </tr>
+                          <tr className="border-b dark:border-neutral-500">
+                            <td className="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
+                              7 May
+                            </td>
+                            <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                              <ul className="list-disc">
+                                <li>Tutorial: How to pitch</li>
+                                <li>
+                                  {' '}
+                                  Community networking: co:lab friday invitation
+                                  - Inspiration
+                                </li>
+                              </ul>
+                            </td>
+                            <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500"></td>
+                            <td className="whitespace-nowrap px-6 py-4">
+                              Discord
+                            </td>
+                          </tr>
+                          <tr className="border-b dark:border-neutral-500">
+                            <td className="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
+                              13-May
+                            </td>
+                            <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                              Presentation+Winner announcement
+                            </td>
+                            <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                              2-4hrs
+                            </td>
+                            <td className="whitespace-nowrap px-6 py-4">
+                              Zoom, Youtube Livestream <br />
+                              [online]
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div className="w-full my-4 ">
+        <div className="">
           {/* <div className="mx-auto p-5 container">
             <div className="container w-[100%]">
               <div className="flex items-center justify-around flex-wrap mx-auto  w-[80%]">
@@ -611,8 +684,75 @@ const Hackathon: React.FC = () => {
 
                     <span className="font-semibold ">Tejumade Afonja</span>
                     <br />
-                    <span>Judge- Ai Saturday Lagos</span>
+                    <span>Judge- AI Saturday Lagos</span>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="mx-auto p-5 container">
+            <h1 className="mb-5 text-xl font-bold text-center  text-gray-700 md:text-2xl lg:text-xl">
+              Hackathon Sponsors and Partners
+            </h1>
+            <div className="container mx-auto w-[90%]">
+              <div className="flex items-center justify-center mx-auto flex-wrap">
+                <div className="w-1/3 sm:w-[10%] px-4 my-2">
+                  <img
+                    src="https://s3.amazonaws.com/challengepost/sponsors/logos/000/030/136/highres/imageedit_1_9736518548.jpg"
+                    alt="Ai Saturday Lagos"
+                    width="100%"
+                  />
+                </div>
+                <div className="w-2/3 sm:w-[20%] px-4  my-2">
+                  <img
+                    src="https://s3.amazonaws.com/challengepost/sponsors/logos/000/030/137/highres/Untitled.png"
+                    alt="Ai Saturday Lagos"
+                    width="100%"
+                  />
+                </div>
+                <div className="w-1/3 sm:w-[10%] px-4  my-2">
+                  <img
+                    src="https://s3.amazonaws.com/challengepost/sponsors/logos/000/030/142/highres/imageedit_19_8898109917.png"
+                    alt="Arewa Datascience Community"
+                    width={'100%'}
+                  />
+                </div>
+                <div className="w-1/3 sm:w-[10%] px-4  my-2">
+                  <img
+                    src="https://s3.amazonaws.com/challengepost/sponsors/logos/000/030/141/highres/imageedit_17_6751278248.jpg"
+                    alt="Ai Saturday Lagos"
+                    width={'100%'}
+                  />
+                </div>
+                <div className="w-1/3 sm:w-[10%] px-4   my-2">
+                  <img
+                    src="https://s3.amazonaws.com/challengepost/sponsors/logos/000/030/139/highres/imageedit_7_8508616043.jpg"
+                    alt="Ai Saturday Lagos"
+                    width={'100%'}
+                  />
+                </div>
+                <div className="w-1/3 sm:w-[10%] px-4  my-2">
+                  <img
+                    src="https://s3.amazonaws.com/challengepost/sponsors/logos/000/030/140/highres/imageedit_9_6463237720.jpg"
+                    alt="Ai Saturday Lagos"
+                    width={'100%'}
+                  />
+                </div>
+                <div className="w-1/3 sm:w-[10%] px-4  my-2">
+                  <img
+                    src="https://s3.amazonaws.com/challengepost/sponsors/logos/000/030/145/highres/imageedit_21_8843030975.png"
+                    alt="Arewa Datascience Community"
+                    width={'100%'}
+                  />
+                </div>
+
+                <div className="w-1/3 sm:w-[10%] px-4  my-2">
+                  <img
+                    src="https://s3.amazonaws.com/challengepost/sponsors/logos/000/030/144/highres/Primary_%281%29.png"
+                    alt="Ai Saturday Lagos"
+                    width={'100%'}
+                  />
                 </div>
               </div>
             </div>

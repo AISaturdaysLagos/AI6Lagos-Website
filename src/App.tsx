@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="w-full overflow-hidden">
       <Routes>
-        {/* <Route path="/" element={<Home />} /> */}
+        <Route path="/" element={<Home />} />
         <Route path="/hackathon/:slug" element={<Hackathon />} />
         <Route path="*" element={<HackathonList />} />
       </Routes>

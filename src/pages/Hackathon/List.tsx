@@ -11,15 +11,16 @@ const hackathonList = [
     data: '28th April - 13th May 2023',
     description: `Use Cohere's multilingual embedding to empower your creativity, and foster innovation that drives progress and growth in Africa and beyond.`,
   },
-  {
-    name: 'LagosAi Hack 2',
-    ongoing: false,
-    data: '28th -  23th July, 2018',
-    description: `
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor vitae tempore itaque, ea ipsa dignissimos corporis iure consequatur.
-    `,
-  },
+  // {
+  //   name: 'LagosAi Hack 2',
+  //   ongoing: false,
+  //   data: '28th -  23th July, 2018',
+  //   description: `
+  //     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor vitae tempore itaque, ea ipsa dignissimos corporis iure consequatur.
+  //   `,
+  // },
 ] as const;
+
 const HackathonList: React.FC = () => {
   return (
     <Layout>
@@ -28,7 +29,7 @@ const HackathonList: React.FC = () => {
           <div className="mx-auto md:w-[80%] lg:w-[80%] h-[300px] flex items-center justify-center ">
             <div className="w-[80%] md:w-full text-center">
               <h1 className="text-2xl md:text-4xl my-3 font-bold text-white">
-                Community Events{' '}
+                Explore Hackathon
               </h1>
             </div>
           </div>
@@ -40,11 +41,11 @@ const HackathonList: React.FC = () => {
       <div className="w-full my-10 ">
         <div className="">
           <div className="mx-auto p-5 container ">
-            <h1 className="mb-5 text-2xl font-bold text-center text-gray-900 dark:text-white md:text-4xl lg:text-4xl">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r to-stone-700 from-orange-400">
+            {/* <h1 className="mb-5 text-2xl font-bold text-center text-gray-900 dark:text-white md:text-4xl lg:text-4xl">
+              <span className="text-transparent bg-clip-text text-grey-700">
                 Explore Hackathons.
               </span>
-            </h1>
+            </h1> */}
 
             <div className="container mx-auto w-[75%]">
               <div className="grid grid-cols-1 mx-auto sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">

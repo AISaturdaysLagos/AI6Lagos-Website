@@ -21,7 +21,7 @@ const Footer: React.FC = () => {
           <div className="from">
             <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
               <div className="mx-auto max-w-screen-md sm:text-center">
-                <h2 className="mb-4 text-white text-3xl tracking-tight font-extrabold  sm:text-4xl ">
+                <h2 className="mb-4 text-white text-2xl tracking-tight font-extrabold  sm:text-2xl ">
                   Sign up for our newsletter
                 </h2>
                 <p className="mx-auto mb-8 max-w-2xl font-light text-white md:mb-12 sm:text-xl">
@@ -58,7 +58,7 @@ const Footer: React.FC = () => {
                     <div>
                       <button
                         type="submit"
-                        className="py-3 px-5 w-full text-sm font-medium text-center text-white rounded-lg border cursor-pointer bg-primary-700 border-none  sm:rounded-none sm:rounded-r-lg bg-[#f89320] "
+                        className="py-3 px-5 w-full text-sm font-medium text-center text-white rounded-lg border cursor-pointer  border-none  sm:rounded-none sm:rounded-r-lg bg-[#f89320] "
                       >
                         Subscribe
                       </button>
@@ -71,18 +71,29 @@ const Footer: React.FC = () => {
         </div>
       </div>
 
-      <footer className="bg-[#f89320] ">
+      <footer className="bg-[#f89320e1] ">
         <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
           <div className="sm:flex sm:items-center sm:justify-between">
             <Link to="/" className="flex items-center mb-4 sm:mb-0">
               <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">
-                Ai Saturday Lagos
+                AI Saturdays Lagos
               </span>
             </Link>
             <ul className="flex flex-wrap items-center mb-6 text-sm font-medium sm:mb-0 text-white">
               <li>
-                <Link to="#" className="mr-4 hover:underline md:mr-6 ">
-                  AI Hackathon
+                <Link
+                  to="/hackathons"
+                  className="mr-4 hover:underline md:mr-6 "
+                >
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/hackathons"
+                  className="mr-4 hover:underline md:mr-6 "
+                >
+                  Hackathon
                 </Link>
               </li>
               {/* <li>
@@ -105,18 +116,38 @@ const Footer: React.FC = () => {
           <hr className="my-6 border-gray-100 sm:mx-auto  lg:my-8" />
           <div className="block text-sm text-white sm:text-center ">
             <div className="flex sm:justify-center justify-center mb-4">
-              <span className="mx-2">
+              <a
+                className="mx-2"
+                href="https://www.youtube.com/c/AISaturdaysLagos"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <TfiYoutube size={30} />
-              </span>
-              <span className="mx-2">
+              </a>
+              <a
+                className="mx-2"
+                href="https://twitter.com/aisaturdaylagos?lang=en"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <TfiTwitterAlt size={30} />
-              </span>
-              <span className="mx-2">
+              </a>
+              <a
+                className="mx-2"
+                href="https://www.instagram.com/aisaturdayslagos/?hl=en"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <BsInstagram size={30} />
-              </span>
-              <span className="mx-2">
+              </a>
+              <a
+                className="mx-2"
+                href="https://www.linkedin.com/company/68993333/admin/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <ImLinkedin size={30} />
-              </span>
+              </a>
             </div>
           </div>
           <span className="block text-sm text-white text-center sm:text-center ">

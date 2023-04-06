@@ -13,7 +13,7 @@ const NavBar: React.FC = () => {
     //   hasButton: false,
     // },
     {
-      title: 'AI Hackathon',
+      title: 'Hackathon',
       link: '/hackathons',
       id: 1,
       hasButton: false,
@@ -37,16 +37,16 @@ const NavBar: React.FC = () => {
               src="https://res.cloudinary.com/owujib/image/upload/v1679622305/samples/ai_saturday_pilyub.png"
               loading="lazy"
               className="h-6 mr-3 sm:h-10"
-              alt="AI Saturday Lagos"
+              alt="AI Saturdays Lagos"
             />
             <span className="text-base self-center lg:text-2xl md:text-2xl font-semibold whitespace-nowrap text-[#f89320] ">
-              AI Saturday Lagos
+              AI Saturdays Lagos
             </span>
           </Link>
           <button
             data-collapse-toggle="navbar-solid-bg"
             type="button"
-            className="inline-flex items-center p-2 ml-3 text-sm text-gray-700 border-black rounded-lg md:hidden hover:bg-dark focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            className="inline-flex items-center p-2 ml-3 text-sm text-gray-900 border-black rounded-lg md:hidden hover:bg-dark focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
             aria-controls="navbar-solid-bg"
             aria-expanded="false"
             onClick={() => {
@@ -95,7 +95,7 @@ const NavBar: React.FC = () => {
         `}
         >
           <ul>
-            <li>
+            {/* <li>
               <Link
                 to="/learning-tracks"
                 className="block py-2 pl-3 pr-4 text-white rounded bg-orange-400  md:bg-transparent md:text-orange-400 md:p-0 md:dark:text-white dark:bg-orange-400 md:dark:bg-transparent"
@@ -103,13 +103,22 @@ const NavBar: React.FC = () => {
               >
                 Learning Tracks
               </Link>
+            </li> */}
+            <li>
+              <Link
+                to="/"
+                className="block py-2 pl-3 pr-4 text-white rounded bg-orange-400  md:bg-transparent md:text-orange-400 md:p-0 md:dark:text-white dark:bg-orange-400 md:dark:bg-transparent"
+                aria-current="page"
+              >
+                Home
+              </Link>
             </li>
             <li>
               <Link
-                to="/hackathon"
+                to="/hackathons"
                 className="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-orange-500 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
-                Hackathon
+                Hackathons
               </Link>
             </li>
             <li>
