@@ -2,7 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { SiBuildkite } from 'react-icons/si';
 import { HiDocument } from 'react-icons/hi';
-import { AiFillStar, AiOutlineTeam } from 'react-icons/ai';
+import { AiOutlineTeam } from 'react-icons/ai';
+import { FiExternalLink } from 'react-icons/fi';
 
 import Layout from '../../components/Layout';
 import Footer from '../../components/Footer';
@@ -10,17 +11,17 @@ const Hackathon: React.FC = () => {
   return (
     <Layout>
       <div className="mt-20">
-        <div className="bg-[linear-gradient(to_left_bottom,rgba(248,147,32,0.2),rgba(248,147,32,0.4),rgba(248,147,32,0.8)),url('https://res.cloudinary.com/owujib/image/upload/v1680478882/ai-saturdays-imgs/Group_1_nqp4ec.jpg')] bg-no-repeat bg-cover">
+        <div className="bg-[linear-gradient(to_left_bottom,rgba(248,147,32,0.4),rgba(248,147,32,0.5),rgba(248,147,32,0.8)),url('https://res.cloudinary.com/owujib/image/upload/v1680478882/ai-saturdays-imgs/Group_1_nqp4ec.jpg')] bg-no-repeat bg-cover">
           <div className="mx-auto md:w-[80%] lg:w-[80%] h-[300px] flex items-center justify-center ">
             <div className="w-[80%] md:w-full ">
-              <h1 className="text-2xl md:text-4xl my-3 font-bold text-white">
+              <h1 className="text-2xl md:text-4xl my-3 font-bold text-white mb-4">
                 CohereAI Hack <br />
                 Leveraging Cohere's Multilingual Embedding to Empower Creativity
               </h1>
 
               <Link
                 to="#"
-                className="bg-white my-4 px-4 py-2 text-xl hover:bg-transparent hover:border-white hover:border-4 hover:text-white rounded-md mt-4"
+                className="bg-white mt-4  px-4 py-2 text-xl rounded-md"
               >
                 Register
               </Link>
@@ -33,158 +34,172 @@ const Hackathon: React.FC = () => {
 
       <div className="w-full my-10">
         <div className={`rounded-xl container w-[85%] mx-auto h-full p-[4px]`}>
-          <div className="flex flex-col justify-center h-full bg-white text-black rounded-lg">
+          <div className="flex flex-col justify-center h-full  text-gray-700 rounded-lg">
             <div className="">
               <div className="div">
-                <h1 className="my-6 text-2xl font-extrabold text-center text-gray-700  md:text-4xl lg:text-4xl">
-                  <span className="text-gray-900 bg-clip-text ">
-                    About the Hackathon
-                  </span>
+                <h1 className="mb-2 text-xl font-extrabold text-center text-gray-700 md:text-4xl ">
+                  About the Hackathon
                 </h1>
 
-                <h3 className="text-xl font-bold text-left text-gray-900">
+                <h3 className="text-md mt-6 font-bold text-left text-gray-700">
                   Who should participate?
                 </h3>
 
-                <p className="text-left">
+                <p className="text-left text-md">
                   Previous experience in AI is not required but welcomed. While
                   many participants are industry experts, we also welcome people
                   with other types of domain knowledge that want to understand &
                   explore how AI can be used in their fields
                 </p>
 
-                <div className="grid grid-cols-1  mt-4 box-border w-[100%] md:w-[65%] lg:w-[65%] md:grid-cols-1 lg:grid-cols-1">
-                  <div className="card mx-2 my-3 border-transparent ">
-                    <div
-                      className={`rounded-xl h-full p-[4px] flex items-start justify-evenly  flex-col`}
-                    >
-                      <span className="px-3 py-3 my-3 bg-[#f8932080] rounded text-center">
-                        <AiOutlineTeam size={25} />
-                      </span>
-                      <h2 className="text-gray-800 my-2 font-bold text-xl ">
-                        Team Representation{' '}
-                      </h2>
-                      <p className="text-justify">
+                <div className="grid grid-cols-1  mt-4 box-border w-[100%] md:w-[100%] lg:w-[100%] md:grid-cols-2 lg:grid-cols-2">
+                  <div>
+                    <div className="card mx-2 my-3 border-transparent ">
+                      <div
+                        className={`rounded-xl h-full p-[4px] flex items-start justify-evenly  flex-col`}
+                      >
+                        <span className="px-3 py-3 my-3 bg-[#f8932080] rounded text-center">
+                          <AiOutlineTeam size={25} />
+                        </span>
+                        <h2 className="text-gray-800 my-2 font-bold text-xl ">
+                          Team Representation{' '}
+                        </h2>
+                        <p className="text-justify">
+                          <ul>
+                            <li className="border-b-[1px] mb-3 pb-4 border-gray-700">
+                              Each team or organization that enters the
+                              Hackathon must appoint one individual (the{' '}
+                              <q>Representative</q>) to represent, act, and
+                              enter a Submission on its behalf. The
+                              Representative must meet the eligibility
+                              requirements above.
+                            </li>
+                            <li className="border-b-[1px] mb-3 pb-4 border-gray-700">
+                              By entering a Submission on the Hackathon Website
+                              on behalf of a team, you represent and are
+                              authorized to act on behalf of your team or
+                              organization. Teams may be made up of a maximum of
+                              five eligible individuals.
+                            </li>
+                          </ul>
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="card mx-2 my-3  border-transparent  ">
+                      <div
+                        className={`rounded-xl h-full p-[4px] flex items-start justify-center flex-col`}
+                      >
+                        <span className="px-3 py-3 my-3 bg-[#f8932080] rounded text-center">
+                          <SiBuildkite size={25} />
+                        </span>
+                        <h2 className="text-gray-800 my-2 font-bold text-xl ">
+                          Language Requirements{' '}
+                        </h2>
+                        <p className="text-justify">
+                          All Submission materials must be in English or, if not
+                          in English, an English translation of the text
+                          description, and testing instructions as well as all
+                          other materials submitted must be provided.
+                        </p>
+                      </div>
+                    </div>
+                    <div className="card mx-2 my-3  border-transparent">
+                      <div
+                        className={`rounded-xl h-full p-[4px] flex items-start justify-center flex-col`}
+                      >
+                        <span className="px-3 py-3 my-3 bg-[#f8932080] rounded text-center">
+                          <HiDocument size={25} />
+                        </span>
+                        <h2 className="text-gray-800 my-2 font-bold text-xl ">
+                          Documents and Resources for Hackers
+                        </h2>
                         <ul>
-                          <li className="list-disc">
-                            Each team or organization that enters the Hackathon
-                            must appoint one individual (the{' '}
-                            <q>Representative</q>) to represent, act, and enter
-                            a Submission on its behalf. The Representative must
-                            meet the eligibility requirements above.
+                          <li className="my-2">
+                            Freemium tier API Access
+                            <a
+                              href="https://dashboard.cohere.ai/welcome/register"
+                              target="_black"
+                              className="text-[#f89320] underline text-md inline-block mx-[1px] "
+                            >
+                              <FiExternalLink size={20} />
+                            </a>
                           </li>
-                          <li className="list-disc">
-                            By entering a Submission on the Hackathon Website on
-                            behalf of a team, you represent and are authorized
-                            to act on behalf of your team or organization. Teams
-                            may be made up of a maximum of five eligible
-                            individuals.
+                          <li className="text-black text-md">
+                            <span className="inline-flex">
+                              Retrieving datasets Kaggle
+                              <a
+                                href="https://www.kaggle.com/datasets"
+                                target="_blank"
+                                rel="noreferrer"
+                                className="text-[#f89320] underline text-md inline mx-[1px] "
+                              >
+                                <FiExternalLink size={20} />
+                              </a>{' '}
+                              and Google
+                              <a
+                                href="https://www.kaggle.com/datasets"
+                                target="_blank"
+                                rel="noreferrer"
+                                className="text-[#f89320] underline mx-[1px] text-md inline"
+                              >
+                                <FiExternalLink size={20} />
+                              </a>
+                            </span>
+                          </li>
+                          <li>
+                            All Cohere Doc & Quickstart Tutorials{' '}
+                            <a
+                              href="https://docs.cohere.ai/"
+                              target="_blank"
+                              rel="noreferrer"
+                              className="text-[#f89320] underline text-md inline-block mx-[1px]"
+                            >
+                              <FiExternalLink size={20} />
+                            </a>
+                          </li>
+                          <li>
+                            Building with Streamlit{' '}
+                            <a
+                              href="https://txt.cohere.ai/deploy-cohere-streamlit/"
+                              target="_blank"
+                              rel="noreferrer"
+                              className="text-[#f89320] underline text-md inline-block mx-[1px]"
+                            >
+                              <FiExternalLink size={20} />
+                            </a>
+                          </li>
+                          <li>
+                            Freemium tier API Access
+                            <a
+                              href="https://dashboard.cohere.ai/welcome/register"
+                              target="_blank"
+                              rel="noreferrer"
+                              className="text-[#f89320] underline text-md inline-block mx-[1px]"
+                            >
+                              <FiExternalLink size={20} />
+                            </a>
+                          </li>
+                          <li>
+                            Learn about some application examples
+                            <a
+                              href="https://docs.cohere.ai/page/application-examples/"
+                              target="_blank"
+                              className="text-[#f89320] underline text-md inline-block mx-[1px]"
+                              rel="noreferrer"
+                            >
+                              <FiExternalLink size={20} />
+                            </a>
                           </li>
                         </ul>
-                      </p>
+                      </div>
                     </div>
                   </div>
-
-                  <div className="card mx-2 my-3  border-transparent  ">
-                    <div
-                      className={`rounded-xl h-full p-[4px] flex items-start justify-center flex-col`}
-                    >
-                      <span className="px-3 py-3 my-3 bg-[#f8932080] rounded text-center">
-                        <SiBuildkite size={25} />
-                      </span>
-                      <h2 className="text-gray-800 my-2 font-bold text-xl ">
-                        Language Requirements{' '}
-                      </h2>
-                      <p className="text-justify">
-                        All Submission materials must be in English or, if not
-                        in English, an English translation of the text
-                        description, and testing instructions as well as all
-                        other materials submitted must be provided.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="card mx-2 my-3  border-transparent">
-                    <div
-                      className={`rounded-xl h-full p-[4px] flex items-start justify-center flex-col`}
-                    >
-                      <span className="px-3 py-3 my-3 bg-[#f8932080] rounded text-center">
-                        <HiDocument size={25} />
-                      </span>
-                      <h2 className="text-gray-800 my-2 font-bold text-xl ">
-                        Documents and Resources for Hackers
-                      </h2>
-                      <ul>
-                        <li className="my-2">
-                          <a
-                            href="https://dashboard.cohere.ai/welcome/register"
-                            target="_black"
-                            className="text-black underline text-md"
-                          >
-                            Freemium tier API Access
-                          </a>
-                        </li>
-                        <li className="text-black text-md">
-                          Retrieving datasets{' '}
-                          <a
-                            href="https://www.kaggle.com/datasets"
-                            target="_blank"
-                            rel="noreferrer"
-                            className="text-black underline text-md"
-                          >
-                            Kaggle
-                          </a>{' '}
-                          and
-                          <a
-                            href="https://www.kaggle.com/datasets"
-                            target="_blank"
-                            rel="noreferrer"
-                            className="text-black underline text-md"
-                          >
-                            Google
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="https://docs.cohere.ai/"
-                            target="_blank"
-                            rel="noreferrer"
-                            className="text-black underline text-md"
-                          >
-                            All Cohere Doc & Quickstart Tutorials{' '}
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="https://txt.cohere.ai/deploy-cohere-streamlit/"
-                            target="_blank"
-                            rel="noreferrer"
-                            className="text-black underline text-md"
-                          >
-                            Building with Streamlit{' '}
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="https://dashboard.cohere.ai/welcome/register"
-                            target="_blank"
-                            rel="noreferrer"
-                            className="text-black underline text-md"
-                          >
-                            Freemium tier API Access
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="https://docs.cohere.ai/page/application-examples/"
-                            target="_blank"
-                            className="text-black underline text-md"
-                            rel="noreferrer"
-                          >
-                            Learn about some application examples
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
+                  <div>
+                    <img
+                      src="https://res.cloudinary.com/owujib/image/upload/v1680792985/ai-saturdays-imgs/Cohere__3_tmjbf4.png"
+                      alt="CohereAI"
+                    />
                   </div>
                 </div>
               </div>
@@ -275,7 +290,7 @@ const Hackathon: React.FC = () => {
       <div className="w-full my-10">
         <div className="">
           <div className="mx-auto p-5 container">
-            <h1 className="mb-6 text-2xl font-bold text-center text  text-gray-700 md:text-2xl lg:text-2xl">
+            <h1 className="mb-2 text-xl font-extrabold text-center text-gray-700 md:text-4xl ">
               Timeline for Hackathon
             </h1>
             <div className="container w-[70%] mt-5 md:w-[60%] lg:w-[60%] mx-auto">

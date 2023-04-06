@@ -114,12 +114,12 @@ const HomeSlider = () => {
           <div className="px-4 py-12 container  text-center">
             <div className="w-[85%] md:w-[70%] mx-auto">
               <h1 className="text-lg md:text-4xl font-bold text-white">
-                Leading AI Innovation in Nigeira
+                Leveraging AI Innovation in Nigeira
               </h1>
               <p className="text-white">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Molestiae soluta illum ratione amet perspiciatis non, odit
-                facilis obcaecati similique eum.
+                The pool of true experts in the field is small, and Alibaba,
+                Amazon, Facebook, Google, Microsoft and other tech giants have
+                hired many of them.
               </p>
             </div>
           </div>

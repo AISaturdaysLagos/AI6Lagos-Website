@@ -47,7 +47,7 @@ const HackathonList: React.FC = () => {
               </span>
             </h1> */}
 
-            <div className="container mx-auto w-[75%]">
+            <div className="container mx-auto w-[80%]">
               <div className="grid grid-cols-1 mx-auto sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                 {hackathonList.map((hack, index) => (
                   <div
