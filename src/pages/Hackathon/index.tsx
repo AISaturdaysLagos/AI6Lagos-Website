@@ -272,18 +272,18 @@ const Hackathon: React.FC = () => {
       </div>
 
       {/* timeline */}
-      <div className="w-full my-10 bg-[#f89320]">
+      <div className="w-full my-10">
         <div className="">
           <div className="mx-auto p-5 container">
             <h1 className="mb-6 text-2xl font-bold text-center text  text-gray-700 md:text-2xl lg:text-2xl">
               Timeline for Hackathon
             </h1>
             <div className="container w-[70%] mt-5 md:w-[60%] lg:w-[60%] mx-auto">
-              <ol className="border-l border-white dark:border-white">
+              <ol className="border-l border-gray-800 ">
                 <li>
                   <div className="flex-start flex items-center pt-3">
-                    <div className="-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-white dark:bg-white"></div>
-                    <p className="text-sm text-white">
+                    <div className="-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-gray-700"></div>
+                    <p className="text-sm text-gray-700">
                       <span>
                         7<sup>th</sup>
                       </span>{' '}
@@ -291,15 +291,15 @@ const Hackathon: React.FC = () => {
                     </p>
                   </div>
                   <div className="mt-2 ml-4 mb-6">
-                    <h4 className="text-lg font-semibold  text-white">
+                    <h4 className="text-lg font-semibold  text-gray-700">
                       Application/Enrollment deadline
                     </h4>
                   </div>
                 </li>
                 <li>
                   <div className="flex-start flex items-center pt-2">
-                    <div className="-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-white dark:bg-white"></div>
-                    <p className="text-sm text-white">
+                    <div className="-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-gray-700"></div>
+                    <p className="text-sm text-gray-700">
                       {' '}
                       <span>
                         28<sup>th</sup>
@@ -308,15 +308,15 @@ const Hackathon: React.FC = () => {
                     </p>
                   </div>
                   <div className="mt-2 ml-4 mb-6">
-                    <h4 className="text-lg font-semibold text-white">
+                    <h4 className="text-lg font-semibold text-gray-700">
                       Hack kick-off livestream
                     </h4>
                   </div>
                 </li>
                 <li>
                   <div className="flex-start flex items-center pt-2">
-                    <div className="-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-white dark:bg-white"></div>
-                    <p className="text-sm text-white">
+                    <div className="-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-gray-700 "></div>
+                    <p className="text-sm text-gray-700">
                       <span>
                         29-30<sup>th</sup>
                       </span>{' '}
@@ -324,15 +324,15 @@ const Hackathon: React.FC = () => {
                     </p>
                   </div>
                   <div className="mt-2 ml-4 pb-5">
-                    <h4 className="text-lg font-semibold  text-white">
+                    <h4 className="text-lg font-semibold  text-gray-700">
                       Workshop sessions{' '}
                     </h4>
                   </div>
                 </li>
                 <li>
                   <div className="flex-start flex items-center pt-2">
-                    <div className="-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-white dark:bg-white"></div>
-                    <p className="text-sm text-white">
+                    <div className="-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-gray-700"></div>
+                    <p className="text-sm text-gray-700">
                       <span>
                         6<sup>th</sup>
                       </span>{' '}
@@ -340,15 +340,15 @@ const Hackathon: React.FC = () => {
                     </p>
                   </div>
                   <div className="mt-2 ml-4 pb-5">
-                    <h4 className="text-lg font-semibold  text-white">
+                    <h4 className="text-lg font-semibold  text-gray-700">
                       Project submission deadline{' '}
                     </h4>
                   </div>
                 </li>
                 <li>
                   <div className="flex-start flex items-center pt-2">
-                    <div className="-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-white dark:bg-white"></div>
-                    <p className="text-sm text-white">
+                    <div className="-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-gray-700 "></div>
+                    <p className="text-sm text-gray-700">
                       <span>
                         6<sup>th</sup>
                       </span>{' '}
@@ -356,7 +356,7 @@ const Hackathon: React.FC = () => {
                     </p>
                   </div>
                   <div className="mt-2 ml-4 pb-5">
-                    <h4 className="text-lg font-semibold  text-white">
+                    <h4 className="text-lg font-semibold  text-gray-700">
                       Winner livestream announcement
                     </h4>
                   </div>
@@ -373,12 +373,12 @@ const Hackathon: React.FC = () => {
             Workshop Schedule{' '}
           </h1>
           <div className="inline-block min-w-full py-2 sm:px-2 lg:px-4">
-            <div className="overflow-hidden container mx-auto">
-              <div className="flex flex-col w-[75%]">
+            <div className="overflow-hidden container mx-auto md:mx-0 lg:mx-0">
+              <div className="flex flex-col w-[100%]">
                 <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
-                  <div className="inline-block min-w-full py-2 sm:px-6 lg:px-8">
+                  <div className="inline-block min-w-full py-2 sm:px-6 lg:px-8 md:px-8 ">
                     <div className="overflow-hidden container">
-                      <table className="min-w-full border md:w-full text-left text-sm font-light dark:border-neutral-500">
+                      <table className="min-w-[70%] border md:w-full text-left text-sm font-light dark:border-neutral-500">
                         <thead className="border-b font-medium dark:border-neutral-600">
                           <tr>
                             <th

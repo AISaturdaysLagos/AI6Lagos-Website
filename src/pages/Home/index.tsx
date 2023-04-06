@@ -28,24 +28,20 @@ const Home: React.FC = () => {
   return (
     <Layout>
       <HomeSlider />
-      <div className="mt-4 w-full py-4">
-        <div className="md:w-full w-full lg:w-full mt-4 py-4 md:h-80">
+      <div className="mt-6 w-full md:w-[80%] md:mx-auto py-4">
+        <div className="my-4">
           <div className="items-center justify-center flex flex-col ">
-            <h1 className="mb-5 text-3xl font-extrabold text-center text-gray-900 dark:text-white md:text-5xl lg:text-6xl">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r to-stone-700 from-orange-400">
-                Learning Tracks.
-              </span>
+            <h1 className="mb-2 text-xl font-extrabold text-center text-gray-700 md:text-4xl ">
+              Learning Tracks
             </h1>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
               {learningTracks.map((track) => (
                 <div
                   key={track.id}
-                  className="rounded-xl card m-2 h-[140px]  cursor-pointer border hover:shadow-md  transform hover:-translate-y-1 transition-all duration-400"
+                  className="rounded-xl card m-2 h-[140px] shadow-md  transform hover:-translate-y-1 transition-all duration-400"
                 >
-                  <div
-                    className={`rounded-xl h-full  p-[4px]  bg-gradient-to-r to-gray-500 from-orange-400`}
-                  >
+                  <div className={`rounded-xl h-full  p-[4px]`}>
                     <div className="flex flex-col justify-center h-full bg-white text-white rounded-lg">
                       <div className="m-3 flex justify-center flex-col items-center">
                         <h1 className=" text-gray-700">
@@ -54,11 +50,6 @@ const Home: React.FC = () => {
                         <h2 className="text-lg text-center text-gray-700 mb-2 ">
                           {track.title}
                         </h2>
-                        {/* <p className="font-light font-mono text-sm text-gray-700 hover:text-gray-900 transition-all duration-200">
-                      Space, the final frontier. These are the voyages of the
-                      Starship Enterprise. Its five-year mission: to explore
-                      strange new worlds.
-                    </p> */}
                       </div>
                     </div>
                   </div>
@@ -68,40 +59,71 @@ const Home: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="mt-4 w-full max-w-full h-auto py-4 bg-orange-400">
-        <div className="mt-4 mx-auto  lg:max-7xl md:max-w-6xl py-7 ">
-          <h1 className="mb-5 text-3xl font-extrabold text-center text-gray-900 dark:text-white md:text-5xl lg:text-6xl">
-            <span className="text-transparent bg-clip-text bg-white">
-              Latest Updates.
-            </span>
+      <div className="mt-2 w-full md:w-[80%] md:mx-auto py-4">
+        <div className="mt-2 mx-auto  lg:max-7xl md:max-w-6xl py-7 ">
+          <h1 className="mb-5 text-xl font-extrabold text-center text-gray-700 md:text-4xl ">
+            Latest Updates
           </h1>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
-            {[...Array(4)].map((track, index) => (
+          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 w-[75%] mx-auto">
+            <div className="card mx-2 my-3  h-[150px] md:h-[150px] cursor-pointer border-transparent p-3 border-gray-500 rounded-lg shadow-md  bg-white hover:shadow-md transform hover:-translate-x-0 hover:-translate-y-2 transition-all duration-200">
               <div
-                key={index}
-                className="card mx-2 my-3  h-[150px] md:h-[150px] cursor-pointer border-transparent p-3 border-gray-500 rounded-lg shadow-md shadow-gray-700 bg-white hover:shadow-md transform hover:-translate-x-0 hover:-translate-y-2 transition-all duration-200"
+                className={`rounded-xl h-full p-[4px] flex items-start justify-center flex-col`}
               >
-                <div
-                  className={`rounded-xl h-full p-[4px] flex items-start justify-center flex-col`}
-                >
-                  <h2 className="text-base text-gray-700 mb-2 ">
-                    Application for the 7th cohort is open
-                  </h2>
-                  {/* <p className="font-light font-mono text-sm text-gray-700 hover:text-gray-900 transition-all duration-200">
-                    If you are eager to learn data science, machine learning or
-                    deep learning, then you should consider applying.
-                  </p> */}
+                <h2 className="text-md font-semibold text-gray-700 mb-2 ">
+                  CohereAIHack
+                </h2>
+                <p className="text-sm text-gray-700">
+                  Leverage Cohere’s Multilingual Embedding to Empower Creativity
+                </p>
 
-                  <Link
-                    to="/"
-                    className="text-sm  mt-3 text-black inline-flex item-center"
-                  >
-                    view more <HiArrowNarrowRight size={20} />
-                  </Link>
-                </div>
+                <a
+                  href="https://ai6lagos.devpost.com/"
+                  target="_blank"
+                  className="text-sm  mt-3 text-gray-700 inline-flex item-center underline"
+                  rel="noreferrer"
+                >
+                  Register
+                </a>
               </div>
-            ))}
+            </div>
+            <div className="card mx-2 my-3  h-[150px] md:h-[150px]  border-transparent p-3 border-gray-500 rounded-lg shadow-md  bg-white hover:shadow-md transform hover:-translate-x-0 hover:-translate-y-2 transition-all duration-200">
+              <div
+                className={`rounded-xl h-full p-[4px] flex items-start justify-center flex-col`}
+              >
+                <h2 className="text-md text-gray-700 mb-2 font-semibold">
+                  AI Saturdays Lagos partners with NVIDIA
+                </h2>
+                <p className="text-sm text-gray-700">
+                  AI Saturdays Lagos has kickstarted a partnership with NVIDIA,
+                  and we will introduce the community to the vast resource and
+                  tools available at NVIDIA
+                </p>
+              </div>
+            </div>
+            <div className="card mx-2 my-3  h-[150px] md:h-[150px]  border-transparent p-3 border-gray-500 rounded-lg shadow-md  bg-white hover:shadow-md transform hover:-translate-x-0 hover:-translate-y-2 transition-all duration-200">
+              <div
+                className={`rounded-xl h-full p-[4px] flex items-start justify-center flex-col`}
+              >
+                <h2 className="text-md text-gray-700 mb-2 font-semibold">
+                  AI Saturdays Lagos Recieves Grant
+                </h2>
+
+                <p className="text-gray-700 tex-sm">
+                  Two projects from the AI6 Lagos research track received
+                  IndabaX- AI4D research grant worth $8000
+                </p>
+
+                <a
+                  href="https://www.pscp.tv/w/ch2AhDFxTFFHVkp2QXdwRUp8MXlvS01YTWFrTWt4UeTlYOHqH_gF5Ra1yFryc6g27d0GNcyD-Q4OqlOhRzi4?t=3s&s=09"
+                  target="_blank"
+                  className="text-sm  mt-3 text-gray-700 inline-flex item-center underline"
+                  rel="noreferrer"
+                >
+                  Register
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>

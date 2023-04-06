@@ -20,11 +20,10 @@ const HomeSlider = () => {
 
   return (
     <>
-      <div className="w-full mb-4 ">
-        <div className="relative box-border h-[450px]">
-          <Slider ref={sliderRef} {...settings} className="w-full ">
-            {/* slider one */}
-            <div
+      {/* <div className="w-full mb-4 "> */}
+      {/* <div className="relative box-border h-[450px]"> */}
+      {/* <Slider ref={sliderRef} {...settings} className="w-full "> */}
+      {/* <div
               className="w-full bg-no-repeat bg-cover bg-center bg-[conic-gradient(var(--tw-gradient-stops)),url('https://res.cloudinary.com/owujib/image/upload/v1680478882/ai-saturdays-imgs/Group_1_nqp4ec.jpg')] from-amber-200 via-violet-600 to-sky-900"
               style={{
                 backgroundSize: 'cover',
@@ -59,8 +58,8 @@ const HomeSlider = () => {
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="w-full md:h-[85%] lg:h-[85%] h-[455px] bg-[linear-gradient(to_right_bottom,rgba(0,0,0,0.65),rgba(0,0,0,0.7)),url('https://res.cloudinary.com/owujib/image/upload/v1680055265/ai-saturdays-imgs/IMG_20190202_112621_hju44s.jpg')] bg-no-repeat bg-cover bg-center">
+            </div> */}
+      {/* <div className="w-full md:h-[85%] lg:h-[85%] h-[455px] bg-[linear-gradient(to_right_bottom,rgba(0,0,0,0.65),rgba(0,0,0,0.7)),url('https://res.cloudinary.com/owujib/image/upload/v1680055265/ai-saturdays-imgs/IMG_20190202_112621_hju44s.jpg')] bg-no-repeat bg-cover bg-center">
               <div className="w-full text-right">
                 <div className="px-10  py-4 mx-auto max-w-2xl lg:max-w-6xl">
                   <div className="max-w-2xl">
@@ -87,10 +86,9 @@ const HomeSlider = () => {
                   </div>
                 </div>
               </div>
-            </div>
-            {/* slider two */}
-          </Slider>
-          <div className="text-right w-full absolute top-[86%] px-12 left-2 ">
+            </div> */}
+      {/* </Slider> */}
+      {/* <div className="text-right w-full absolute top-[86%] px-12 left-2 ">
             <button
               className="rounded text-white border-2 border-white hover:border-orange-400 hover:text-orange-400 bg-transparent p-1 px-3 my-2 mx-2 text-2xl "
               onClick={() => {
@@ -107,6 +105,23 @@ const HomeSlider = () => {
             >
               <TiArrowRight />
             </button>
+          </div> */}
+      {/* </div> */}
+      {/* </div> */}
+
+      <div className="w-full mt-20 flex justify-center items-center bg-[linear-gradient(to_left_bottom,rgba(248,147,32,0.4),rgba(248,147,32,0.5),rgba(248,147,32,0.8)),url('https://res.cloudinary.com/owujib/image/upload/v1680478882/ai-saturdays-imgs/Group_1_nqp4ec.jpg')] bg-no-repeat bg-cover">
+        <div className="py-14">
+          <div className="px-4 py-12 container  text-center">
+            <div className="w-[85%] md:w-[70%] mx-auto">
+              <h1 className="text-lg md:text-4xl font-bold text-white">
+                Leading AI Innovation in Nigeira
+              </h1>
+              <p className="text-white">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestiae soluta illum ratione amet perspiciatis non, odit
+                facilis obcaecati similique eum.
+              </p>
+            </div>
           </div>
         </div>
       </div>
