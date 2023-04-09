@@ -151,7 +151,8 @@ const Footer: React.FC = () => {
             </div>
           </div>
           <span className="block text-sm text-white text-center sm:text-center ">
-            &copy; {new Date().getFullYear()} . All Rights Reserved.
+            &copy; {new Date().getFullYear()}AI Saturdays Lagos&trade; . All
+            Rights Reserved.
           </span>
         </div>
       </footer>

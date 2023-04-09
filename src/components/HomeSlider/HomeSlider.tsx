@@ -111,7 +111,27 @@ const HomeSlider = () => {
 
       <div className="w-full mt-20 flex justify-center items-center bg-[linear-gradient(to_left_bottom,rgba(248,147,32,0.4),rgba(248,147,32,0.5),rgba(248,147,32,0.8)),url('https://res.cloudinary.com/owujib/image/upload/v1680478882/ai-saturdays-imgs/Group_1_nqp4ec.jpg')] bg-no-repeat bg-cover">
         <div className="py-14">
-          <div className="px-4 py-12 container  text-center">
+          <div className="">
+            <div className="bg-[linear-gradient(to_left_bottom,rgba(248,147,32,0.4),rgba(248,147,32,0.5),rgba(248,147,32,0.8)),url('https://res.cloudinary.com/owujib/image/upload/v1680478882/ai-saturdays-imgs/Group_1_nqp4ec.jpg')] bg-no-repeat bg-cover">
+              <div className="mx-auto md:w-[80%] lg:w-[80%] h-[200px] flex items-center justify-center ">
+                <div className="w-[80%] md:w-full ">
+                  <h1 className="text-2xl md:text-4xl my-3 font-bold text-white mb-4">
+                    CohereAI Hack <br />
+                    Leveraging Cohere's Multilingual Embedding to Empower
+                    Creativity
+                  </h1>
+
+                  <Link
+                    to="#"
+                    className="bg-white mt-4  px-4 py-2 text-xl rounded-md"
+                  >
+                    About us
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* <div className="px-4 py-12 container  text-center">
             <div className="w-[85%] md:w-[70%] mx-auto">
               <h1 className="text-lg md:text-4xl font-bold text-white">
                 Leveraging AI Innovation in Nigeira
@@ -122,7 +142,7 @@ const HomeSlider = () => {
                 hired many of them.
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </>

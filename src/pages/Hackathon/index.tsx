@@ -181,7 +181,7 @@ const Hackathon: React.FC = () => {
                             </a>
                           </li>
                           <li>
-                            Learn about some application examples
+                            Learn about some application examplesg
                             <a
                               href="https://docs.cohere.ai/page/application-examples/"
                               target="_blank"
@@ -195,11 +195,23 @@ const Hackathon: React.FC = () => {
                       </div>
                     </div>
                   </div>
-                  <div>
+                  <div className="md:block lg:block hidden border-[1px] border-gray-600 rounded-lg h-[50%] ml-6">
                     <img
                       src="https://res.cloudinary.com/owujib/image/upload/v1680792985/ai-saturdays-imgs/Cohere__3_tmjbf4.png"
                       alt="CohereAI"
                     />
+                    <div className="px-6">
+                      <p>
+                        Cohere's Multilingual Model translates text to a
+                        semantic vector space, placing text with comparable
+                        meanings close together. This approach enables a variety
+                        of beneficial use cases in multilingual situations. For
+                        example, during a search, one can map a query to this
+                        vector space to identify relevant documents nearby. This
+                        frequently produces search results that are several
+                        times better than keyword searches.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -714,58 +726,65 @@ const Hackathon: React.FC = () => {
               <div className="flex items-center justify-center mx-auto flex-wrap">
                 <div className="w-1/3 sm:w-[10%] px-4 my-2">
                   <img
-                    src="https://s3.amazonaws.com/challengepost/sponsors/logos/000/030/136/highres/imageedit_1_9736518548.jpg"
+                    src="https://res.cloudinary.com/owujib/image/upload/v1680792986/ai-saturdays-imgs/AI6_Lagos__11_xoorgk.png"
                     alt="Ai Saturday Lagos"
                     width="100%"
                   />
                 </div>
                 <div className="w-2/3 sm:w-[20%] px-4  my-2">
                   <img
-                    src="https://s3.amazonaws.com/challengepost/sponsors/logos/000/030/137/highres/Untitled.png"
-                    alt="Ai Saturday Lagos"
+                    src="https://res.cloudinary.com/owujib/image/upload/v1680792985/ai-saturdays-imgs/Cohere__3_tmjbf4.png"
+                    alt="CohereAI"
                     width="100%"
                   />
                 </div>
                 <div className="w-1/3 sm:w-[10%] px-4  my-2">
                   <img
-                    src="https://s3.amazonaws.com/challengepost/sponsors/logos/000/030/142/highres/imageedit_19_8898109917.png"
+                    src="https://res.cloudinary.com/owujib/image/upload/v1680792985/ai-saturdays-imgs/Arewa__10_gjcefv.png"
                     alt="Arewa Datascience Community"
                     width={'100%'}
                   />
                 </div>
                 <div className="w-1/3 sm:w-[10%] px-4  my-2">
                   <img
-                    src="https://s3.amazonaws.com/challengepost/sponsors/logos/000/030/141/highres/imageedit_17_6751278248.jpg"
-                    alt="Ai Saturday Lagos"
+                    src="https://res.cloudinary.com/owujib/image/upload/v1680799330/ai-saturdays-imgs/AI6_Ibadan__1_fvbmwe.png"
+                    alt="Ai Saturday Ibadan"
                     width={'100%'}
                   />
                 </div>
                 <div className="w-1/3 sm:w-[10%] px-4   my-2">
                   <img
-                    src="https://s3.amazonaws.com/challengepost/sponsors/logos/000/030/139/highres/imageedit_7_8508616043.jpg"
-                    alt="Ai Saturday Lagos"
+                    src="https://res.cloudinary.com/owujib/image/upload/v1680792985/ai-saturdays-imgs/AI6_Abuja__1_m3sx8b.png"
+                    alt="Ai Saturday Abuja"
                     width={'100%'}
                   />
                 </div>
                 <div className="w-1/3 sm:w-[10%] px-4  my-2">
                   <img
-                    src="https://s3.amazonaws.com/challengepost/sponsors/logos/000/030/140/highres/imageedit_9_6463237720.jpg"
-                    alt="Ai Saturday Lagos"
+                    src="https://res.cloudinary.com/owujib/image/upload/v1680799610/ai-saturdays-imgs/CMU_Africa__13_jzuepu.png"
+                    alt="CMU africa"
                     width={'100%'}
                   />
                 </div>
                 <div className="w-1/3 sm:w-[10%] px-4  my-2">
                   <img
-                    src="https://s3.amazonaws.com/challengepost/sponsors/logos/000/030/145/highres/imageedit_21_8843030975.png"
-                    alt="Arewa Datascience Community"
+                    src="https://res.cloudinary.com/owujib/image/upload/v1680792985/ai-saturdays-imgs/Nithub__2_v86cjb.png"
+                    alt="Nithub"
                     width={'100%'}
                   />
                 </div>
 
                 <div className="w-1/3 sm:w-[10%] px-4  my-2">
                   <img
-                    src="https://s3.amazonaws.com/challengepost/sponsors/logos/000/030/144/highres/Primary_%281%29.png"
-                    alt="Ai Saturday Lagos"
+                    src="https://res.cloudinary.com/owujib/image/upload/v1680792985/ai-saturdays-imgs/Ehealth__5_dcnifz.png"
+                    alt="E healthz"
+                    width={'100%'}
+                  />
+                </div>
+                <div className="w-1/3 sm:w-[10%] px-4  my-2">
+                  <img
+                    src="https://res.cloudinary.com/owujib/image/upload/v1680792985/ai-saturdays-imgs/Uni_Ibadan__2_e5wnin.png"
+                    alt="University of Ibadan"
                     width={'100%'}
                   />
                 </div>
