@@ -65,8 +65,8 @@ const Home: React.FC = () => {
             Latest Updates
           </h1>
 
-          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 w-[75%] mx-auto">
-            <div className="card mx-2 my-3   cursor-pointer border-transparent p-3 border-gray-500 rounded-lg shadow-md  bg-white hover:shadow-md transform hover:-translate-x-0 hover:-translate-y-2 transition-all duration-200">
+          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 w-[100%] mx-auto">
+            <div className="card mx-2 my-3 border-transparent p-3 border-gray-500 rounded-lg shadow-md  bg-white hover:shadow-md transform hover:-translate-x-0 hover:-translate-y-2 transition-all duration-200">
               <div
                 className={`rounded-xl p-[4px] flex items-start justify-center flex-col`}
               >
@@ -163,7 +163,7 @@ const Home: React.FC = () => {
       <div className="mt-6 w-full md:w-[80%] md:mx-auto py-4 mb-12">
         <div className="my-4">
           <div className="items-center justify-center flex flex-col ">
-            <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 w-[80%] md:w-full lg:w-full">
+            <div className="md:w-full lg:w-full">
               <div className="card m-2 h-[140px]  transform hover:-translate-y-1 transition-all duration-400">
                 <div className={` h-full  p-[4px]`}>
                   <div className="flex flex-col justify-start h-full bg-white text-white rounded-lg">

@@ -112,7 +112,7 @@ const HomeSlider = () => {
       <div className="w-full mt-20 flex justify-center items-center bg-[linear-gradient(to_left_bottom,rgba(248,147,32,0.4),rgba(248,147,32,0.5),rgba(248,147,32,0.8)),url('https://res.cloudinary.com/owujib/image/upload/v1680478882/ai-saturdays-imgs/Group_1_nqp4ec.jpg')] bg-no-repeat bg-cover">
         <div className="py-14">
           <div className="">
-            <div className="bg-[linear-gradient(to_left_bottom,rgba(248,147,32,0.4),rgba(248,147,32,0.5),rgba(248,147,32,0.8)),url('https://res.cloudinary.com/owujib/image/upload/v1680478882/ai-saturdays-imgs/Group_1_nqp4ec.jpg')] bg-no-repeat bg-cover">
+            <div className="">
               <div className="mx-auto md:w-[80%] lg:w-[80%] h-[200px] flex items-center justify-center ">
                 <div className="w-[80%] md:w-full ">
                   <h1 className="text-2xl md:text-4xl my-3 font-bold text-white mb-4">

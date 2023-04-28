@@ -1,8 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { SiBuildkite } from 'react-icons/si';
-import { HiDocument } from 'react-icons/hi';
-import { AiOutlineTeam } from 'react-icons/ai';
+
 import { FiExternalLink } from 'react-icons/fi';
 
 import Layout from '../../components/Layout';
@@ -14,15 +12,12 @@ const Hackathon: React.FC = () => {
         <div className="bg-[linear-gradient(to_left_bottom,rgba(248,147,32,0.4),rgba(248,147,32,0.5),rgba(248,147,32,0.8)),url('https://res.cloudinary.com/owujib/image/upload/v1680478882/ai-saturdays-imgs/Group_1_nqp4ec.jpg')] bg-no-repeat bg-cover">
           <div className="mx-auto md:w-[80%] lg:w-[80%] h-[300px] flex items-center justify-center ">
             <div className="w-[80%] md:w-full ">
-              <h1 className="text-2xl md:text-4xl my-3 font-bold text-white mb-4">
+              <h1 className="text-2xl md:text-4xl my-3 font-bold text-white mb-10">
                 CohereAI Hack <br />
                 Leveraging Cohere's Multilingual Embedding to Empower Creativity
               </h1>
 
-              <Link
-                to="#"
-                className="bg-white mt-4  px-4 py-2 text-xl rounded-md"
-              >
+              <Link to="#" className="bg-white  px-4 py-2 text-xl rounded-md">
                 Register
               </Link>
             </div>
@@ -52,7 +47,168 @@ const Hackathon: React.FC = () => {
                   explore how AI can be used in their fields
                 </p>
 
-                <div className="grid grid-cols-1  mt-4 box-border w-[100%] md:w-[100%] lg:w-[100%] md:grid-cols-2 lg:grid-cols-2">
+                <div className="flex flex-wrap gap-10 mt- items-start mt-10">
+                  <div className="card mx-2 my-3 border-transparent md:w-[45%] lg:w-[45%]">
+                    <div
+                      className={`rounded-xl h-full p-[4px] flex items-start justify-evenly  flex-col`}
+                    >
+                      <h2 className="text-gray-800 my-2 font-bold text-xl ">
+                        Team Representation{' '}
+                      </h2>
+                      <p className="text-justify">
+                        <ul>
+                          <li className="border-b-[1px] mb-3 pb-4 border-gray-700">
+                            Each team or organization that enters the Hackathon
+                            must appoint one individual (the{' '}
+                            <q>Representative</q>) to represent, act, and enter
+                            a Submission on its behalf. The Representative must
+                            meet the eligibility requirements above.
+                          </li>
+                          <li className="border-b-[1px] mb-3 pb-4 border-gray-700">
+                            By entering a Submission on the Hackathon Website on
+                            behalf of a team, you represent and are authorized
+                            to act on behalf of your team or organization. Teams
+                            may be made up of a maximum of five eligible
+                            individuals.
+                          </li>
+                        </ul>
+                      </p>
+                    </div>
+                  </div>
+                  <div className="card md:w-[45%] lg:w-[45%] md:block hidden">
+                    <img
+                      src="https://res.cloudinary.com/owujib/image/upload/v1682630400/ai-saturdays-imgs/pexels-helena-lopes-1015568_t6mpam.jpg"
+                      alt="..."
+                      className="w-[100%] rounded-lg"
+                    />
+                  </div>
+                  <div className="card md:w-[45%] lg:w-[45%] md:block hidden">
+                    <img
+                      src="https://res.cloudinary.com/owujib/image/upload/v1682639154/ai-saturdays-imgs/pexels-mati-mango-6330644_dfhl4h.jpg"
+                      alt="..."
+                      className="w-[100%] rounded-lg"
+                    />
+                  </div>
+                  <div className="card mx-2 my-3 border-transparent md:w-[45%] lg:w-[45%]">
+                    <div className={`rounded-xl p-[4px] `}>
+                      <h2 className="text-gray-800 font-bold text-xl ">
+                        Language Requirements{' '}
+                      </h2>
+                      <p className="text-justify">
+                        All Submission materials must be in English or, if not
+                        in English, an English translation of the text
+                        description, and testing instructions as well as all
+                        other materials submitted must be provided.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="card mx-2 my-3 border-transparent md:w-[45%] lg:w-[45%]">
+                    <div className={`rounded-xl p-[4px] `}>
+                      <h2 className="text-gray-800 font-bold text-xl ">
+                        Language Requirements{' '}
+                      </h2>
+                      <p className="text-justify"></p>
+                      <ul>
+                        <li className="my-2">
+                          Freemium tier API Access
+                          <a
+                            href="https://dashboard.cohere.ai/welcome/register"
+                            target="_black"
+                            className="text-[#f89320] underline text-md inline-block mx-[1px] "
+                          >
+                            <FiExternalLink size={20} />
+                          </a>
+                        </li>
+                        <li className="text-black text-md my-2">
+                          <span className="inline-flex">
+                            Retrieving datasets Kaggle
+                            <a
+                              href="https://www.kaggle.com/datasets"
+                              target="_blank"
+                              rel="noreferrer"
+                              className="text-[#f89320] underline text-md inline mx-[1px] "
+                            >
+                              <FiExternalLink size={20} />
+                            </a>{' '}
+                            and Google
+                            <a
+                              href="https://www.kaggle.com/datasets"
+                              target="_blank"
+                              rel="noreferrer"
+                              className="text-[#f89320] underline mx-[1px] text-md inline"
+                            >
+                              <FiExternalLink size={20} />
+                            </a>
+                          </span>
+                        </li>
+                        <li className="text-black text-md my-2">
+                          All Cohere Doc & Quickstart Tutorials{' '}
+                          <a
+                            href="https://docs.cohere.ai/"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="text-[#f89320] underline text-md inline-block mx-[1px]"
+                          >
+                            <FiExternalLink size={20} />
+                          </a>
+                        </li>
+                        <li className="text-black text-md my-2">
+                          Building with Streamlit{' '}
+                          <a
+                            href="https://txt.cohere.ai/deploy-cohere-streamlit/"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="text-[#f89320] underline text-md inline-block mx-[1px]"
+                          >
+                            <FiExternalLink size={20} />
+                          </a>
+                        </li>
+                        <li className="text-black text-md my-2">
+                          Freemium tier API Access
+                          <a
+                            href="https://dashboard.cohere.ai/welcome/register"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="text-[#f89320] underline text-md inline-block mx-[1px]"
+                          >
+                            <FiExternalLink size={20} />
+                          </a>
+                        </li>
+                        <li className="text-black text-md my-2">
+                          Learn about some application examplesg
+                          <a
+                            href="https://docs.cohere.ai/page/application-examples/"
+                            target="_blank"
+                            className="text-[#f89320] underline text-md inline-block mx-[1px]"
+                            rel="noreferrer"
+                          >
+                            <FiExternalLink size={20} />
+                          </a>
+                        </li>
+                      </ul>
+                      <div className="text-left w-full mb-5 mt-10  text-white">
+                        <a
+                          href="https://ai6lagos.devpost.com"
+                          className="bg-[#f89320cd] w-[80px] rounded-md px-6 py-2"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          Register
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="card md:w-[45%] lg:w-[45%] md:block hidden">
+                    <img
+                      src="https://res.cloudinary.com/owujib/image/upload/v1682639154/ai-saturdays-imgs/pexels-element-digital-1370294_ekmljc.jpg"
+                      alt="..."
+                      className="w-[100%] rounded-lg"
+                    />
+                  </div>
+                </div>
+
+                {/* <div className="grid grid-cols-1 mt-4 box-border w-[100%] md:w-[100%] lg:w-[100%] md:grid-cols-2 lg:grid-cols-2">
                   <div>
                     <div className="card mx-2 my-3 border-transparent ">
                       <div
@@ -85,7 +241,6 @@ const Hackathon: React.FC = () => {
                         </p>
                       </div>
                     </div>
-
                     <div className="card mx-2 my-3  border-transparent  ">
                       <div
                         className={`rounded-xl h-full p-[4px] flex items-start justify-center flex-col`}
@@ -195,27 +350,27 @@ const Hackathon: React.FC = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="md:block lg:block hidden border-[1px] border-gray-600 rounded-lg h-[50%] ml-6">
+                  <div className="md:block lg:block mr-5 hidden rounded-lg h-[45%] ml-6">
                     <img
                       src="https://res.cloudinary.com/owujib/image/upload/v1680792985/ai-saturdays-imgs/Cohere__3_tmjbf4.png"
                       alt="CohereAI"
                     />
-                    <div className="px-6">
+                    <div className="px-3">
                       <p>
-                        Cohere's Multilingual Model translates text to a
-                        semantic vector space, placing text with comparable
-                        meanings close together. This approach enables a variety
-                        of beneficial use cases in multilingual situations. For
-                        example, during a search, one can map a query to this
-                        vector space to identify relevant documents nearby. This
-                        frequently produces search results that are several
-                        times better than keyword searches.
+                        Cohere's Multilingual Model translates text using a
+                        semantic vector space, which groups comparable material
+                        together based on meaning. This approach has various
+                        advantages in multilingual contexts, such as the ability
+                        to map a search query to this vector space to identify
+                        relevant pages that are close. When compared to keyword
+                        searches, this method frequently provides substantially
+                        more accurate search results.
                       </p>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
-              <div className="text-left w-full mb-5 mt-10  text-white">
+              {/* <div className="text-left w-full mb-5 mt-10  text-white">
                 <a
                   href="https://ai6lagos.devpost.com"
                   className="bg-[#f89320cd] w-[80px] rounded-md px-6 py-2"
@@ -224,7 +379,7 @@ const Hackathon: React.FC = () => {
                 >
                   Register
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -239,7 +394,7 @@ const Hackathon: React.FC = () => {
             </h1>
 
             <div className="container md:mx-auto">
-              <div className="grid grid-cols-1 md:container px-4 md:px-14 lg:px-14 mt-4 sm:grid-cols-2  md:grid-cols-4 lg:grid-cols-4">
+              <div className="grid grid-cols-1 md:container px-4 md:px-14 lg:px-14 mt-4 sm:grid-cols-1  md:grid-cols-2 lg:grid-cols-4">
                 <div className="card mx-2 my-3 p-2">
                   <div
                     className={`rounded-xl  p-2 flex items-start justify-center flex-col`}
@@ -701,18 +856,169 @@ const Hackathon: React.FC = () => {
                       to users?
                     </p>
                   </div>
-                  <div className="my-3">
-                    <img
-                      width={'95px'}
-                      className="rounded-full"
-                      alt=""
-                      src="https://d112y698adiu2z.cloudfront.net/photos/production/judge_photos/002/434/851/datas/large.png"
-                    />
+                  <section className="bg-white">
+                    <div className="py-8 mx-auto max-w-screen-xl  text-center lg:py-10 lg:px-4">
+                      <div className="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+                        <div className="text-center text-gray-500 dark:text-gray-400">
+                          <div className="w-36 h-36 mx-auto mb-4 bg-cover rounded-full bg-[url('https://res.cloudinary.com/owujib/image/upload/v1682675726/ai-saturdays-imgs/teju-e1654621748194-400x500_-_AI_Saturdays_Lagos_ip8ycf.png')]"></div>
+                          <h3 className="mb-1 text-md font-bold tracking-tight text-gray-700">
+                            <span>Tejumade Afonja</span>
+                          </h3>
+                          <p className="text-sm">
+                            Organizer, Judge, Mentor, Speaker - Co-founder / AI
+                            Saturdays Lagos
+                          </p>
+                        </div>
+                        <div className="text-center text-gray-500 dark:text-gray-400">
+                          <div className="w-36 h-36 mx-auto mb-4 bg-cover rounded-full bg-[url('https://res.cloudinary.com/owujib/image/upload/v1682675724/ai-saturdays-imgs/Screenshot_2023-04-05_at_10.26.35_AM_-_Roy_Lim_pz9rsu.png')]"></div>
+                          <h3 className="mb-1 text-md font-bold tracking-tight text-gray-700">
+                            <span>Roy Lim</span>
+                          </h3>
+                          <p className="text-sm">
+                            Organizer, Judge - Marketing Events Manager / Cohere{' '}
+                          </p>
+                        </div>
+                        <div className="text-center text-gray-500 dark:text-gray-400">
+                          <div className="w-36 h-36 mx-auto mb-4 bg-cover rounded-full bg-[url('https://res.cloudinary.com/owujib/image/upload/v1682675724/ai-saturdays-imgs/1550802578436_2_-_Roy_Lim_k6iwko.jpg')]"></div>
+                          <h3 className="mb-1 text-md font-bold tracking-tight text-gray-700">
+                            <span>Luis Serrano</span>
+                          </h3>
+                          <p className="text-sm">
+                            Organizer, Judge, Speaker - Developer Relations Lead
+                            / Cohere
+                          </p>
+                        </div>
+                        <div className="text-center text-gray-500 dark:text-gray-400">
+                          <div className="w-36 h-36 mx-auto mb-4 bg-cover rounded-full bg-[url('https://res.cloudinary.com/owujib/image/upload/v1682675726/ai-saturdays-imgs/sandra-turquoise-square_1_-_Roy_Lim_fswtwc.png')]"></div>
+                          <h3 className="mb-1 text-md font-bold tracking-tight text-gray-700">
+                            <span>Sandra Kublik</span>
+                          </h3>
+                          <p className="text-sm">
+                            Organizer, Judge - Developer Relations / Cohere
+                          </p>
+                        </div>
 
-                    <span className="font-semibold ">Tejumade Afonja</span>
-                    <br />
-                    <span>Judge- AI Saturday Lagos</span>
-                  </div>
+                        <div className="text-center text-gray-500 dark:text-gray-400">
+                          <div className="w-36 h-36 mx-auto mb-4 bg-cover rounded-full bg-[url('https://res.cloudinary.com/owujib/image/upload/v1682675732/ai-saturdays-imgs/Adetola_Picture_-_icon_tola_ip8fkn.jpg')]"></div>
+                          <h3 className="mb-1 text-md font-bold tracking-tight text-gray-700">
+                            <span>Raheemat Adetola Adetunji</span>
+                          </h3>
+                          <p className="text-sm">
+                            Organizer, Mentor - Vendease
+                          </p>
+                        </div>
+                        <div className="text-center text-gray-500 dark:text-gray-400">
+                          <div className="w-36 h-36 mx-auto mb-4 bg-cover rounded-full bg-[url('https://res.cloudinary.com/owujib/image/upload/v1682675725/ai-saturdays-imgs/20230312_135108_-_Babangida_Sani_smdgib.jpg')]"></div>
+                          <h3 className="mb-1 text-md font-bold tracking-tight text-gray-700">
+                            <span>Babangida Sani</span>
+                          </h3>
+                          <p className="text-sm">Organizer</p>
+                        </div>
+                        <div className="text-center text-gray-500 dark:text-gray-400">
+                          <div className="w-36 h-36 mx-auto mb-4 bg-cover rounded-full bg-[url('https://res.cloudinary.com/owujib/image/upload/v1682675728/ai-saturdays-imgs/20898E4A-8508-4AED-ACE1-60143D183B81_-_Akintayo_Jabar_qrrjai.jpg')]"></div>
+                          <h3 className="mb-1 text-md font-bold tracking-tight text-gray-700">
+                            <span>Akintayo Jabar</span>
+                          </h3>
+                          <p className="text-sm">
+                            Organizer, Mentor - Data Scientist / Nithio
+                          </p>
+                        </div>
+                        <div className="text-center text-gray-500 dark:text-gray-400">
+                          <div className="w-36 h-36 mx-auto mb-4 bg-cover rounded-full bg-[url('https://res.cloudinary.com/owujib/image/upload/v1682675725/ai-saturdays-imgs/T47CT8XPG-US7DBQVKN-004fc91a83cf-512-removebg-preview_1_-_Taofeek_Olalere_rrefsq.png')]"></div>
+                          <h3 className="mb-1 text-md font-bold tracking-tight text-gray-700">
+                            <span>Taofeek Olalere</span>
+                          </h3>
+                          <p className="text-sm">
+                            Organizer - Software Engineer / Tix Africa
+                          </p>
+                        </div>
+
+                        <div className="text-center text-gray-500 dark:text-gray-400">
+                          <div className="w-36 h-36 mx-auto mb-4 bg-cover rounded-full bg-[url('https://res.cloudinary.com/owujib/image/upload/v1682675724/ai-saturdays-imgs/george_-_George_Igwegbe_x6fyht.jpg')]"></div>
+                          <h3 className="mb-1 text-md font-bold tracking-tight text-gray-700">
+                            <span>George Igwegbe </span>
+                          </h3>
+                          <p className="text-sm">
+                            Organizer, Judge, Mentor - Co-organizer, Instructor
+                            / AI6 Lagos
+                          </p>
+                        </div>
+                        <div className="text-center text-gray-500 dark:text-gray-400">
+                          <div className="w-36 h-36 mx-auto mb-4 bg-cover rounded-full bg-[url('https://res.cloudinary.com/owujib/image/upload/v1682679829/ai-saturdays-imgs/Code_Hub_EOYP-9_-_Emeka_Ohiri_upa6ec.jpg')]"></div>
+                          <h3 className="mb-1 text-md font-bold tracking-tight text-gray-700">
+                            <span>Ohiri Emeka Emmanuel </span>
+                          </h3>
+                          <p className="text-sm">
+                            Organizer - Limitless-Wave Solutions Limited
+                          </p>
+                        </div>
+                        <div className="text-center text-gray-500 dark:text-gray-400">
+                          <div className="w-36 h-36 mx-auto mb-4 bg-top bg-cover rounded-full bg-[url('https://res.cloudinary.com/owujib/image/upload/v1682679830/ai-saturdays-imgs/0K9A9379_-_Mubarak_Daha_Isa_arpat1.jpg')]"></div>
+                          <h3 className="mb-1 text-md font-bold tracking-tight text-gray-700">
+                            <span>Mubarak Daha Isa </span>
+                          </h3>
+                          <p className="text-sm">
+                            Organizer Digital Campaigns Manager/Bridge Connect
+                            Africa{' '}
+                          </p>
+                        </div>
+                        <div className="text-center text-gray-500 dark:text-gray-400">
+                          <div className="w-36 h-36 mx-auto mb-4 bg-top bg-cover rounded-full bg-[url('https://res.cloudinary.com/owujib/image/upload/v1682675735/ai-saturdays-imgs/IMG_20230425_102015_783_-_Sunday_A._AJAGBE_t2mruw.jpg')]"></div>
+                          <h3 className="mb-1 text-md font-bold tracking-tight text-gray-700">
+                            <span>Sunday Adeola Ajagbe</span>
+                          </h3>
+                          <p className="text-sm">
+                            Judge, Mentor - First Technical University{' '}
+                          </p>
+                        </div>
+                        <div className="text-center text-gray-500 dark:text-gray-400">
+                          <div className="w-36 h-36 mx-auto mb-4 bg-top bg-cover rounded-full bg-[url('https://res.cloudinary.com/owujib/image/upload/v1682675727/ai-saturdays-imgs/IMG_3418_-_Orevaoghene_Ahia_cwilkd.jpg')]"></div>
+                          <h3 className="mb-1 text-md font-bold tracking-tight text-gray-700">
+                            <span>Orevaoghene Ahia</span>
+                          </h3>
+                          <p className="text-sm">
+                            Mentor, Speaker - University of Washington{' '}
+                          </p>
+                        </div>
+                        <div className="text-center text-gray-500 dark:text-gray-400">
+                          <div className="w-36 h-36 mx-auto mb-4 bg-top bg-cover rounded-full bg-[url('https://res.cloudinary.com/owujib/image/upload/v1682680884/ai-saturdays-imgs/passport_-_Abiola_John_Akinyele_qj2f0w.jpg')]"></div>
+                          <h3 className="mb-1 text-md font-bold tracking-tight text-gray-700">
+                            <span>Akinyele Abiola John</span>
+                          </h3>
+                          <p className="text-sm">
+                            Mentor - University of Ibadan{' '}
+                          </p>
+                        </div>
+                        <div className="text-center text-gray-500 dark:text-gray-400">
+                          <div className="w-36 h-36 mx-auto mb-4 bg-top bg-cover rounded-full bg-[url('https://res.cloudinary.com/owujib/image/upload/v1682675724/ai-saturdays-imgs/luiza_-_Luiza_Pozzobon_vpzu14.jpg')]"></div>
+                          <h3 className="mb-1 text-md font-bold tracking-tight text-gray-700">
+                            <span>Luiza Pozzobon</span>
+                          </h3>
+                          <p className="text-sm">
+                            Mentor - Research Scholar at Cohere For AI{' '}
+                          </p>
+                        </div>
+                        <div className="text-center text-gray-500 dark:text-gray-400">
+                          <div className="w-36 h-36 mx-auto mb-4 bg-top bg-cover rounded-full bg-[url('https://res.cloudinary.com/owujib/image/upload/v1682675725/ai-saturdays-imgs/A4965C02-130A-4AB1-8F12-FCA24BFD16D2_-_AZEEZ_FEMI_xprpo5.jpg')]"></div>
+                          <h3 className="mb-1 text-md font-bold tracking-tight text-gray-700">
+                            <span>Oluwafemi Azeez</span>
+                          </h3>
+                          <p className="text-sm">
+                            Mentor - Senior Data Scientist / Pastel{' '}
+                          </p>
+                        </div>
+                        <div className="text-center text-gray-500 dark:text-gray-400">
+                          <div className="w-36 h-36 mx-auto mb-4 bg-top bg-cover rounded-full bg-[url('https://res.cloudinary.com/owujib/image/upload/v1682675731/ai-saturdays-imgs/2022-03-07-18-22-53-936_-_Charles_Yusuf_ocjr8r.jpg')]"></div>
+                          <h3 className="mb-1 text-md font-bold tracking-tight text-gray-700">
+                            <span>Charles Yusuf</span>
+                          </h3>
+                          <p className="text-sm">
+                            Mentor - Machine Learning Researcher / Trust Stamp{' '}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
                 </div>
               </div>
             </div>
