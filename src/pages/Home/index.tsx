@@ -164,33 +164,41 @@ const Home: React.FC = () => {
         <div className="my-4">
           <div className="items-center justify-center flex flex-col ">
             <div className="md:w-full lg:w-full">
-              <div className="card m-2 h-[140px]  transform hover:-translate-y-1 transition-all duration-400">
-                <div className={` h-full  p-[4px]`}>
+              <div className="card m-2   transform hover:-translate-y-1 transition-all duration-400">
+                <div className={` p-[4px]`}>
                   <div className="flex flex-col justify-start h-full bg-white text-white rounded-lg">
                     <div className="m-3 flex justify-center flex-col items-start">
                       <h1 className="mb-2 text-md font-bold text-center text-gray-700 md:text-lg ">
                         Who we are
                       </h1>
                       <p className="text-md text-gray-700 mb-2 ">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Enim nostrum, est earum deleniti tenetur minus
-                        possimus ullam temporibus expedita natus!
+                        We are an active learning community which promotes
+                        Artificial Intelligence (AI) in Lagos. We organize
+                        structured study groups around core AI fields like
+                        Machine Learning, Computer Vision (CV) and Natural
+                        Language Processing (NLP).
                       </p>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className=" card m-2 h-[140px]   transform hover:-translate-y-1 transition-all duration-400">
-                <div className={` h-full  p-[4px]`}>
+              <div className=" card m-2    transform hover:-translate-y-1 transition-all duration-400">
+                <div className={`  p-[4px]`}>
                   <div className="flex flex-col justify-start h-full bg-white text-white rounded-lg">
                     <div className="m-3 flex justify-start flex-col items-start">
                       <h1 className="mb-2 text-md font-bold text-center text-gray-700 md:text-lg ">
                         What we do
                       </h1>
                       <p className="text-md text-gray-700 mb-2 ">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit. Voluptatum, corporis illo. Eveniet, eaque
-                        consectetur quisquam beatae numquam ab. Adipisci, aut!
+                        As Artificial Intelligence is set to revolutionize the
+                        4th industrial revolution, we need to be ready and
+                        prepared. We want the next billion AI practitioners rise
+                        from AI6 communities.
+                      </p>
+                      <p className="text-md text-gray-700 mb-2 ">
+                        We share a belief that AI will transmogrify almost (if
+                        not all) industries and we want to be on the forefront
+                        of making that happen.
                       </p>
                     </div>
                   </div>

@@ -13,20 +13,20 @@ const NavBar: React.FC = () => {
     //   hasButton: false,
     // },
     {
-      title: 'Hackathon',
+      title: 'Hackathons',
       link: '/hackathons',
       id: 1,
       hasButton: false,
     },
-    // { title: 'About us', link: '/learning-tracks', id: 2, hasButton: false },
-    // { title: 'Contact us', link: '/learning-tracks', id: 3, hasButton: true },
+    { title: 'About us', link: '/learning-tracks', id: 2, hasButton: false },
+    { title: 'Contact us', link: '/learning-tracks', id: 3, hasButton: true },
   ];
 
   const linkClass =
     'block py-1 pl-1 pr-1 md:text-xs text-md text-gray-700  md:p-0 ';
 
   const buttonClass =
-    'text-white bg-[#f89320]  md:text-xs hover:bg-orange-600 focus:ring-4 focus:outline-none focus:ring-orange-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 md:mr-0 dark:bg-orange-400 dark:hover:bg-orange-400 dark:focus:ring-orange-400';
+    'text-white bg-[#f89320]  md:text-xs hover:bg-[#f89320] focus:ring-4 focus:outline-none focus:ring-[#f89320] font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 md:mr-0';
 
   return (
     <>

@@ -29,7 +29,7 @@ const HackathonList: React.FC = () => {
           <div className="mx-auto md:w-[80%] lg:w-[80%] h-[300px] flex items-center justify-center ">
             <div className="w-[80%] md:w-full text-center">
               <h1 className="text-2xl md:text-4xl my-3 font-bold text-white">
-                Explore Hackathon
+                Explore Hackathons
               </h1>
             </div>
           </div>
@@ -57,12 +57,12 @@ const HackathonList: React.FC = () => {
                     <Link
                       to={hack?.ongoing ? '/hackathon/cohere-ai-hack' : '#'}
                     >
-                      <div className="bg-gray-400 w-full h-[150px] rounded-t"></div>
-                      <div className="p-4">
+                      <div className="bg-gray-400 w-full h-[155px] rounded-t bg-[url('https://res.cloudinary.com/owujib/image/upload/v1682686841/ai-saturdays-imgs/cohere-banner_v5o2ce.jpg')] bg-cover bg-right-top"></div>
+                      <div className="p-3">
                         <span className="bg-orange-300 text-white text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded mr-2">
                           <svg
                             aria-hidden="true"
-                            className="w-3 h-3 mr-1"
+                            className="w-3 h-2 mr-1"
                             fill="currentColor"
                             viewBox="0 0 20 20"
                             xmlns="http://www.w3.org/2000/svg"
@@ -77,7 +77,7 @@ const HackathonList: React.FC = () => {
                         </span>
                       </div>
                       <div
-                        className={` flex items-start justify-center flex-col p-4`}
+                        className={` flex items-start justify-center flex-col p-3`}
                       >
                         <h2 className="text-lg font-bold text-gray-700 mb-1 ">
                           {hack.name}

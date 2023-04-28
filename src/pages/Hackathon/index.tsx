@@ -9,7 +9,8 @@ const Hackathon: React.FC = () => {
   return (
     <Layout>
       <div className="mt-20">
-        <div className="bg-[linear-gradient(to_left_bottom,rgba(248,147,32,0.4),rgba(248,147,32,0.5),rgba(248,147,32,0.8)),url('https://res.cloudinary.com/owujib/image/upload/v1680478882/ai-saturdays-imgs/Group_1_nqp4ec.jpg')] bg-no-repeat bg-cover">
+        <div className="bg-[linear-gradient(to_left_bottom,rgba(0,0,0,0.5),rgba(0,0,0,0.6),rgba(0,0,0,0.8)),url('https://res.cloudinary.com/owujib/image/upload/v1682686841/ai-saturdays-imgs/cohere-banner_v5o2ce.jpg')] bg-no-repeat  bg-fixed bg-top-right">
+          {/* <div className="bg-[linear-gradient(to_left_bottom,rgba(248,147,32,0.4),rgba(248,147,32,0.5),rgba(248,147,32,0.8)),url('https://res.cloudinary.com/owujib/image/upload/v1680478882/ai-saturdays-imgs/Group_1_nqp4ec.jpg')] bg-no-repeat bg-cover"> */}
           <div className="mx-auto md:w-[80%] lg:w-[80%] h-[300px] flex items-center justify-center ">
             <div className="w-[80%] md:w-full ">
               <h1 className="text-2xl md:text-4xl my-3 font-bold text-white mb-10">
@@ -32,11 +33,11 @@ const Hackathon: React.FC = () => {
           <div className="flex flex-col justify-center h-full  text-gray-700 rounded-lg">
             <div className="">
               <div className="div">
-                <h1 className="mb-2 text-xl font-extrabold text-center text-gray-700 md:text-4xl ">
+                <h1 className="mb-2 text-xl font-extrabold text-center text-gray-700 md:text-3xl ">
                   About the Hackathon
                 </h1>
 
-                <h3 className="text-md mt-6 font-bold text-left text-gray-700">
+                <h3 className="text-xl mt-6 font-bold text-left text-gray-700">
                   Who should participate?
                 </h3>
 
@@ -46,6 +47,8 @@ const Hackathon: React.FC = () => {
                   with other types of domain knowledge that want to understand &
                   explore how AI can be used in their fields
                 </p>
+
+                <hr className="my-8 h-px bg-gray-400 border-0 " />
 
                 <div className="flex flex-wrap gap-10 mt- items-start mt-10">
                   <div className="card mx-2 my-3 border-transparent md:w-[45%] lg:w-[45%]">
