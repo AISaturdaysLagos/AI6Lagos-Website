@@ -115,7 +115,7 @@ const HomeSlider = () => {
             <div className="">
               <div className="mx-auto md:w-[80%] lg:w-[80%] h-[200px] flex items-center justify-center ">
                 <div className="w-[80%] md:w-full ">
-                  <h1 className="text-2xl md:text-4xl my-3 font-bold text-white mb-4">
+                  <h1 className="text-2xl md:text-4xl my-3 font-bold text-white mb-10">
                     CohereAI Hack <br />
                     Leveraging Cohere's Multilingual Embedding to Empower
                     Creativity

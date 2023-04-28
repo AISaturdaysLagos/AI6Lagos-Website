@@ -554,202 +554,186 @@ const Hackathon: React.FC = () => {
           <h1 className="mb-6 text-2xl font-bold text-center text  text-gray-700 md:text-2xl lg:text-2xl">
             Workshop Schedule{' '}
           </h1>
-          <div className="inline-block min-w-full py-2 sm:px-2 lg:px-4">
-            <div className="overflow-hidden container mx-auto md:mx-0 lg:mx-0">
-              <div className="flex flex-col w-[100%]">
-                <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
-                  <div className="inline-block min-w-full py-2 sm:px-6 lg:px-8 md:px-8 ">
-                    <div className="overflow-hidden container">
-                      <table className="min-w-[70%] border md:w-full text-left text-sm font-light dark:border-neutral-500">
-                        <thead className="border-b font-medium dark:border-neutral-600">
-                          <tr>
-                            <th
-                              scope="col"
-                              className="border-r px-6 py-4 dark:border-neutral-600"
-                            >
-                              Date
-                            </th>
-                            <th
-                              scope="col"
-                              className="border-r px-6 py-4 dark:border-neutral-600"
-                            >
-                              Proposed Topic
-                            </th>
-                            <th
-                              scope="col"
-                              className="border-r px-6 py-4 dark:border-neutral-600"
-                            >
-                              Duration
-                            </th>
-                            <th scope="col" className="px-6 py-4">
-                              Platform
-                            </th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr className="border-b dark:border-neutral-500">
-                            <td className="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
-                              7-Apr
-                            </td>
-                            <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
-                              Launch- Registration
-                            </td>
-                            <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500"></td>
-                            <td className="whitespace-nowrap px-6 py-4"></td>
-                          </tr>
-                          <tr className="border-b dark:border-neutral-500">
-                            <td className="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
-                              28-Apr
-                            </td>
-                            <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
-                              <ul className="list-disc">
-                                <li>Welcome keynote by Luis and Teju JJ</li>
-                                <li>
-                                  {' '}
-                                  Introduction to Hackathon Challenge by Roy and
-                                </li>
-                                <li>Team Formation</li>
-                                <li> Q&A</li>
-                              </ul>
-                            </td>
-                            <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
-                              TBD
-                            </td>
-                            <td className="whitespace-nowrap px-6 py-4">
-                              Zoom, Youtube Livestream [online]
-                            </td>
-                          </tr>
-                          <tr className="border-b dark:border-neutral-500">
-                            <td className="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
-                              29-Apr
-                            </td>
-                            <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
-                              <ul className="list-disc">
-                                <li>
-                                  Tutorial: Large Language Models for Real-World
-                                  Applications- A Gentle Intro by Luis Serrano
-                                </li>
-                                <li> Topic by Sara Hooker</li>
-                                <li>
-                                  Tutorial: How to Add AI to your App
-                                  (Pre-recording)
-                                </li>
-                              </ul>
-                            </td>
-                            <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
-                              TBD
-                            </td>
-                            <td className="whitespace-nowrap px-6 py-4">
-                              Zoom, Youtube Livestream [online]
-                            </td>
-                          </tr>
-                          <tr className="border-b dark:border-neutral-500">
-                            <td className="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
-                              30-Apr
-                            </td>
-                            <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
-                              <ul className="list-disc">
-                                <li>Q&A</li>
-                                <li> Team Formation</li>
-                                <li>Tutorial: Pending</li>
-                              </ul>
-                            </td>
-                            <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
-                              TBD
-                            </td>
-                            <td className="whitespace-nowrap px-6 py-4">
-                              Zoom, Youtube Livestream [online]
-                            </td>
-                          </tr>
-                          <tr className="border-b dark:border-neutral-500">
-                            <td className="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
-                              30 Apr - 6 May
-                            </td>
-                            <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
-                              Hacking in progress - Tips and Tricks + teams
-                              check-in
-                            </td>
-                            <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
-                              7 days
-                            </td>
-                            <td className="whitespace-nowrap px-6 py-4">
-                              Discord [online]
-                            </td>
-                          </tr>
-                          <tr className="border-b dark:border-neutral-500">
-                            <td className="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
-                              6 May
-                            </td>
-                            <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
-                              Last day of hacking (optional In-person event){' '}
-                              <br />
-                              Lagos, Ibadan, Kigali. Abuja, Ibadan and Kano
-                            </td>
-                            <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
-                              9-6pm (TBD)
-                            </td>
-                            <td className="whitespace-nowrap px-6 py-4">
-                              Lagos, Ibadan, Abuja, Kigali, Kano <br />
-                              [online + in-person]{' '}
-                            </td>
-                          </tr>
-                          <tr className="border-b dark:border-neutral-500">
-                            <td className="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
-                              6 May
-                            </td>
-                            <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
-                              Submission deadline
-                              <br />
-                            </td>
-                            <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
-                              23:59 WAT
-                            </td>
-                            <td className="whitespace-nowrap px-6 py-4">
-                              Google Form / DevPost?
-                            </td>
-                          </tr>
-                          <tr className="border-b dark:border-neutral-500">
-                            <td className="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
-                              7 May
-                            </td>
-                            <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
-                              <ul className="list-disc">
-                                <li>Tutorial: How to pitch</li>
-                                <li>
-                                  {' '}
-                                  Community networking: co:lab friday invitation
-                                  - Inspiration
-                                </li>
-                              </ul>
-                            </td>
-                            <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500"></td>
-                            <td className="whitespace-nowrap px-6 py-4">
-                              Discord
-                            </td>
-                          </tr>
-                          <tr className="border-b dark:border-neutral-500">
-                            <td className="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
-                              13-May
-                            </td>
-                            <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
-                              Presentation+Winner announcement
-                            </td>
-                            <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
-                              2-4hrs
-                            </td>
-                            <td className="whitespace-nowrap px-6 py-4">
-                              Zoom, Youtube Livestream <br />
-                              [online]
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          {/* <div className="inline-block min-w-full py-2 sm:px-2 lg:px-4"> */}
+          <div className="relative overflow-x-auto border-[1px] border-gray-600">
+            <table className="w-full text-sm text-left text-gray-700 ">
+              <thead className="border-b font-medium dark:border-neutral-600">
+                <tr>
+                  <th
+                    scope="col"
+                    className="border-r px-6 py-4 dark:border-neutral-600"
+                  >
+                    Date
+                  </th>
+                  <th
+                    scope="col"
+                    className="border-r px-6 py-4 dark:border-neutral-600"
+                  >
+                    Proposed Topic
+                  </th>
+                  <th
+                    scope="col"
+                    className="border-r px-6 py-4 dark:border-neutral-600"
+                  >
+                    Duration
+                  </th>
+                  <th scope="col" className="px-6 py-4">
+                    Platform
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-b dark:border-neutral-500">
+                  <td className="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
+                    7-Apr
+                  </td>
+                  <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                    Launch- Registration
+                  </td>
+                  <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500"></td>
+                  <td className="whitespace-nowrap px-6 py-4"></td>
+                </tr>
+                <tr className="border-b dark:border-neutral-500">
+                  <td className="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
+                    28-Apr
+                  </td>
+                  <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                    <ul className="list-disc">
+                      <li>Welcome keynote by Luis and Teju JJ</li>
+                      <li> Introduction to Hackathon Challenge by Roy and</li>
+                      <li>Team Formation</li>
+                      <li> Q&A</li>
+                    </ul>
+                  </td>
+                  <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                    TBD
+                  </td>
+                  <td className="whitespace-nowrap px-6 py-4">
+                    Zoom, Youtube Livestream [online]
+                  </td>
+                </tr>
+                <tr className="border-b dark:border-neutral-500">
+                  <td className="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
+                    29-Apr
+                  </td>
+                  <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                    <ul className="list-disc">
+                      <li>
+                        Tutorial: Large Language Models for Real-World
+                        Applications- A Gentle Intro by Luis Serrano
+                      </li>
+                      <li> Topic by Sara Hooker</li>
+                      <li>
+                        Tutorial: How to Add AI to your App (Pre-recording)
+                      </li>
+                    </ul>
+                  </td>
+                  <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                    TBD
+                  </td>
+                  <td className="whitespace-nowrap px-6 py-4">
+                    Zoom, Youtube Livestream [online]
+                  </td>
+                </tr>
+                <tr className="border-b dark:border-neutral-500">
+                  <td className="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
+                    30-Apr
+                  </td>
+                  <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                    <ul className="list-disc">
+                      <li>Q&A</li>
+                      <li> Team Formation</li>
+                      <li>Tutorial: Pending</li>
+                    </ul>
+                  </td>
+                  <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                    TBD
+                  </td>
+                  <td className="whitespace-nowrap px-6 py-4">
+                    Zoom, Youtube Livestream [online]
+                  </td>
+                </tr>
+                <tr className="border-b dark:border-neutral-500">
+                  <td className="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
+                    30 Apr - 6 May
+                  </td>
+                  <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                    Hacking in progress - Tips and Tricks + teams check-in
+                  </td>
+                  <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                    7 days
+                  </td>
+                  <td className="whitespace-nowrap px-6 py-4">
+                    Discord [online]
+                  </td>
+                </tr>
+                <tr className="border-b dark:border-neutral-500">
+                  <td className="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
+                    6 May
+                  </td>
+                  <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                    Last day of hacking (optional In-person event) <br />
+                    Lagos, Ibadan, Kigali. Abuja, Ibadan and Kano
+                  </td>
+                  <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                    9-6pm (TBD)
+                  </td>
+                  <td className="whitespace-nowrap px-6 py-4">
+                    Lagos, Ibadan, Abuja, Kigali, Kano <br />
+                    [online + in-person]{' '}
+                  </td>
+                </tr>
+                <tr className="border-b dark:border-neutral-500">
+                  <td className="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
+                    6 May
+                  </td>
+                  <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                    Submission deadline
+                    <br />
+                  </td>
+                  <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                    23:59 WAT
+                  </td>
+                  <td className="whitespace-nowrap px-6 py-4">
+                    Google Form / DevPost?
+                  </td>
+                </tr>
+                <tr className="border-b dark:border-neutral-500">
+                  <td className="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
+                    7 May
+                  </td>
+                  <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                    <ul className="list-disc">
+                      <li>Tutorial: How to pitch</li>
+                      <li>
+                        {' '}
+                        Community networking: co:lab friday invitation -
+                        Inspiration
+                      </li>
+                    </ul>
+                  </td>
+                  <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500"></td>
+                  <td className="whitespace-nowrap px-6 py-4">Discord</td>
+                </tr>
+                <tr className="border-b dark:border-neutral-500">
+                  <td className="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
+                    13-May
+                  </td>
+                  <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                    Presentation+Winner announcement
+                  </td>
+                  <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                    2-4hrs
+                  </td>
+                  <td className="whitespace-nowrap px-6 py-4">
+                    Zoom, Youtube Livestream <br />
+                    [online]
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
+          {/* </div> */}
         </div>
       </div>
 
