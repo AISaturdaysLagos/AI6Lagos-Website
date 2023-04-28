@@ -41,7 +41,7 @@ const Hackathon: React.FC = () => {
                   Who should participate?
                 </h3>
 
-                <p className="text-left text-md">
+                <p className="text-left text-md md:w-[70%] lg:w-[70%]">
                   Previous experience in AI is not required but welcomed. While
                   many participants are industry experts, we also welcome people
                   with other types of domain knowledge that want to understand &
@@ -50,12 +50,12 @@ const Hackathon: React.FC = () => {
 
                 <hr className="my-8 h-px bg-gray-400 border-0 " />
 
-                <div className="flex flex-wrap gap-10 mt- items-start mt-10">
-                  <div className="card mx-2 my-3 border-transparent md:w-[45%] lg:w-[45%]">
+                <div className="flex flex-wrap gap-10 items-start mt-10">
+                  <div className="card my-3 border-transparent md:w-[45%] lg:w-[45%]">
                     <div
-                      className={`rounded-xl h-full p-[4px] flex items-start justify-evenly  flex-col`}
+                      className={`rounded-xl h-full flex items-start justify-evenly  flex-col`}
                     >
-                      <h2 className="text-gray-800 my-2 font-bold text-xl ">
+                      <h2 className="text-gray-800 mt-2 font-bold text-xl ">
                         Team Representation{' '}
                       </h2>
                       <p className="text-justify">
@@ -92,8 +92,8 @@ const Hackathon: React.FC = () => {
                       className="w-[100%] rounded-lg"
                     />
                   </div>
-                  <div className="card mx-2 my-3 border-transparent md:w-[45%] lg:w-[45%]">
-                    <div className={`rounded-xl p-[4px] `}>
+                  <div className="card mt-3 border-transparent md:w-[45%] lg:w-[45%]">
+                    <div className={`rounded-xl p-[2px]`}>
                       <h2 className="text-gray-800 font-bold text-xl ">
                         Language Requirements{' '}
                       </h2>
@@ -106,8 +106,8 @@ const Hackathon: React.FC = () => {
                     </div>
                   </div>
 
-                  <div className="card mx-2 my-3 border-transparent md:w-[45%] lg:w-[45%]">
-                    <div className={`rounded-xl p-[4px] `}>
+                  <div className="card mt-3 border-transparent md:w-[45%] lg:w-[45%]">
+                    <div className={`rounded-xl p-[2px] `}>
                       <h2 className="text-gray-800 font-bold text-xl ">
                         Language Requirements{' '}
                       </h2>
@@ -118,19 +118,19 @@ const Hackathon: React.FC = () => {
                           <a
                             href="https://dashboard.cohere.ai/welcome/register"
                             target="_black"
-                            className="text-[#f89320] underline text-md inline-block mx-[1px] "
+                            className="text-[#f89320] underline text-md inline-block"
                           >
                             <FiExternalLink size={20} />
                           </a>
                         </li>
                         <li className="text-black text-md my-2">
-                          <span className="inline-flex">
+                          <>
                             Retrieving datasets Kaggle
                             <a
                               href="https://www.kaggle.com/datasets"
                               target="_blank"
                               rel="noreferrer"
-                              className="text-[#f89320] underline text-md inline mx-[1px] "
+                              className="text-[#f89320] underline text-md inline"
                             >
                               <FiExternalLink size={20} />
                             </a>{' '}
@@ -139,11 +139,11 @@ const Hackathon: React.FC = () => {
                               href="https://www.kaggle.com/datasets"
                               target="_blank"
                               rel="noreferrer"
-                              className="text-[#f89320] underline mx-[1px] text-md inline"
+                              className="text-[#f89320] underline  text-md inline"
                             >
                               <FiExternalLink size={20} />
                             </a>
-                          </span>
+                          </>
                         </li>
                         <li className="text-black text-md my-2">
                           All Cohere Doc & Quickstart Tutorials{' '}
@@ -151,7 +151,7 @@ const Hackathon: React.FC = () => {
                             href="https://docs.cohere.ai/"
                             target="_blank"
                             rel="noreferrer"
-                            className="text-[#f89320] underline text-md inline-block mx-[1px]"
+                            className="text-[#f89320] underline text-md inline-block "
                           >
                             <FiExternalLink size={20} />
                           </a>
@@ -162,7 +162,7 @@ const Hackathon: React.FC = () => {
                             href="https://txt.cohere.ai/deploy-cohere-streamlit/"
                             target="_blank"
                             rel="noreferrer"
-                            className="text-[#f89320] underline text-md inline-block mx-[1px]"
+                            className="text-[#f89320] underline text-md inline-block"
                           >
                             <FiExternalLink size={20} />
                           </a>
@@ -173,7 +173,7 @@ const Hackathon: React.FC = () => {
                             href="https://dashboard.cohere.ai/welcome/register"
                             target="_blank"
                             rel="noreferrer"
-                            className="text-[#f89320] underline text-md inline-block mx-[1px]"
+                            className="text-[#f89320] underline text-md inline-block "
                           >
                             <FiExternalLink size={20} />
                           </a>
@@ -183,7 +183,7 @@ const Hackathon: React.FC = () => {
                           <a
                             href="https://docs.cohere.ai/page/application-examples/"
                             target="_blank"
-                            className="text-[#f89320] underline text-md inline-block mx-[1px]"
+                            className="text-[#f89320] underline text-md inline-block"
                             rel="noreferrer"
                           >
                             <FiExternalLink size={20} />
@@ -392,7 +392,7 @@ const Hackathon: React.FC = () => {
       <div className="w-full my-10 ">
         <div className="">
           <div className="mx-auto p-5 container">
-            <h1 className="mb-5 text-2xl font-bold text-center text-gray-700 md:text-4xl lg:text-4xl">
+            <h1 className="mb-5 text-2xl font-bold text-center text-gray-700 md:text-4xl lg:text-3xl">
               Prizes
             </h1>
 
@@ -460,10 +460,10 @@ const Hackathon: React.FC = () => {
       <div className="w-full my-10">
         <div className="">
           <div className="mx-auto p-5 container">
-            <h1 className="mb-2 text-xl font-extrabold text-center text-gray-700 md:text-4xl ">
+            <h1 className="mb-2 text-xl font-extrabold text-center text-gray-700 md:text-3xl ">
               Timeline for Hackathon
             </h1>
-            <div className="container w-[70%] mt-5 md:w-[60%] lg:w-[60%] mx-auto">
+            <div className="container  px-16 w-[100%] mt-5 md:w-[100%] lg:w-[100%] mx-auto">
               <ol className="border-l border-gray-800 ">
                 <li>
                   <div className="flex-start flex items-center pt-3">
@@ -798,11 +798,11 @@ const Hackathon: React.FC = () => {
             </div>
           </div> */}
 
-          <div className="w-full my-10 ">
+          <div className="w-full my-10">
             <div className="">
               <div className="mx-auto p-5 container">
                 <h1 className="mb-6 text-2xl font-bold text-center text  text-gray-700 md:text-2xl lg:text-2xl">
-                  Judging Crteria{' '}
+                  Judging Criteria
                 </h1>
                 <div className="container mx-auto w-[85%]">
                   <div className="my-3">
@@ -843,7 +843,7 @@ const Hackathon: React.FC = () => {
                       to users?
                     </p>
                   </div>
-                  <section className="bg-white">
+                  <section className="text-left">
                     <div className="py-8 mx-auto max-w-screen-xl  text-center lg:py-10 lg:px-4">
                       <div className="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                         <div className="text-center text-gray-500 dark:text-gray-400">
